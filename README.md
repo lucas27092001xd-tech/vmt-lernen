@@ -1,5 +1,5 @@
 # VMT Lernapp – Abschlussprüfung LF1–13
-**Lucas Strauch | LAiV Schwerin**
+** | LAiV Schwerin**
 
 🔗 [Zur Lernapp](https://lucas27092001xd-tech.github.io/vmt-lernen/)
 
