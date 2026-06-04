@@ -287,8 +287,9 @@ body{font-family:var(--font);background:var(--bg);color:var(--tx);font-size:15px
 }
 .lightbox.open{display:flex}
 .lb-wrap{position:relative;display:flex;align-items:center;justify-content:center;max-width:96vw;max-height:90vh}
-.lb-img{max-width:92vw;max-height:86vh;object-fit:contain;border-radius:6px;
-  box-shadow:0 8px 40px rgba(0,0,0,.6)}
+.lb-img{max-width:75vw;max-height:75vh;object-fit:contain;border-radius:6px;
+  box-shadow:0 8px 40px rgba(0,0,0,.6);transition:max-width .2s,max-height .2s;cursor:zoom-in}
+.lb-img.zoomed{max-width:96vw;max-height:92vh;cursor:zoom-out}
 .lb-close{
   position:fixed;top:14px;right:16px;font-size:1.4rem;color:white;cursor:pointer;
   background:rgba(255,255,255,.12);border:none;border-radius:50%;width:42px;height:42px;
@@ -2701,7 +2702,7 @@ Prüfungsbereich: PB 1 / Berufsschule</th>
   <button class="lb-close" onclick="closeLb()">✕</button>
   <button class="lb-nav lb-prev" onclick="lbPrev()">‹</button>
   <div class="lb-wrap">
-    <img id="lb-img" src="" alt="">
+    <img id="lb-img" src="" alt="" onclick="toggleZoom()">
   </div>
   <button class="lb-nav lb-next" onclick="lbNext()">›</button>
   <div class="lb-counter" id="lb-counter"></div>
@@ -2802,9 +2803,27 @@ window.addEventListener('scroll', () => {
 // ─── PDF TABS ─────────────────────────────────────────────────────
 function showPDF(id, btn) {
   document.querySelectorAll('.pdf-embed').forEach(e => e.classList.remove('act'));
-  document.getElementById(id).classList.add('act');
+  const el = document.getElementById(id);
+  el.classList.add('act');
+  el.style.display = id === 'p3' ? 'block' : 'block';
   document.querySelectorAll('.pdf-tab-btn').forEach(b => b.classList.remove('act'));
   btn.classList.add('act');
+  // LF9-13 Links lazy-generieren
+  if(id === 'p3') {
+    const cont = document.getElementById('lf913-links');
+    if(!cont.children.length) {
+      const times = ['194053','194058','194103','194108','194113','194117','194123','194127','194133','194138','194202','194214','194222','194234','194241','194246','194252','194258','194308','194314','194321','194327','194333','194339','194345','194351','194358','194403','194409','194415','194421','194428','194434','194440','194447','194454','194501','194508','194515','194522'];
+      times.forEach((t,i) => {
+        const a = document.createElement('a');
+        a.href = `LF9-13/20260530_${t}_compressed.pdf`;
+        a.target = '_blank';
+        a.className = 'pdf-open-link';
+        a.textContent = `📄 Blatt ${i+1}`;
+        a.style.cssText = 'font-size:.72rem;padding:5px 8px';
+        cont.appendChild(a);
+      });
+    }
+  }
 }
 
 // ─── EXAM COUNTDOWN ───────────────────────────────────────────────
