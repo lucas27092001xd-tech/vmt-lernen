@@ -8,120 +8,122 @@
 :root{--bg:#0b1220;--bg2:#131e2e;--bg3:#1a2638;--tx:#e8edf5;--tx2:#8fa3bd;--tx3:#4a6070;--br:#1f3048;--acc:#3b82f6;--grn:#22c55e;--red:#ef4444;--yel:#eab308;--pur:#8b5cf6;--rad:12px;--font:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:var(--font);background:var(--bg);color:var(--tx);min-height:100vh}
-/* NAV */
-.nav{background:linear-gradient(135deg,#0f172a,#1e293b);padding:14px 20px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--br)}
-.nav h1{font-size:.95rem;font-weight:700;flex:1;color:var(--tx)}
+.nav{background:linear-gradient(135deg,#0f172a,#1e293b);padding:12px 16px;display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--br);flex-wrap:wrap}
+.nav h1{font-size:.9rem;font-weight:700;flex:1;color:var(--tx)}
 .nav h1 span{color:#38bdf8}
-.nav-tabs{display:flex;gap:6px;flex-wrap:wrap}
-.ntab{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:8px;color:var(--tx2);padding:6px 14px;cursor:pointer;font-size:.8rem;transition:all .15s}
+.nav-tabs{display:flex;gap:5px;flex-wrap:wrap}
+.ntab{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:8px;color:var(--tx2);padding:6px 12px;cursor:pointer;font-size:.78rem;transition:all .15s}
 .ntab.act{background:var(--acc);border-color:var(--acc);color:white;font-weight:700}
-.home-btn{background:none;border:1px solid var(--br);color:var(--tx2);border-radius:8px;padding:6px 12px;cursor:pointer;font-size:.8rem;text-decoration:none;display:inline-flex;align-items:center;gap:5px}
-.home-btn:hover{background:var(--br)}
-/* PAGES */
-.page{display:none;max-width:900px;margin:0 auto;padding:20px 16px 100px}
+.home-btn{background:none;border:1px solid var(--br);color:var(--tx2);border-radius:8px;padding:6px 10px;cursor:pointer;font-size:.78rem;text-decoration:none;display:inline-flex;align-items:center;gap:4px}
+.page{display:none;max-width:920px;margin:0 auto;padding:18px 14px 100px}
 .page.act{display:block}
 /* HOME */
-.hero{background:linear-gradient(135deg,#0f2744,#1e3a5f);border-radius:var(--rad);padding:28px 24px;margin-bottom:20px;border:1px solid rgba(59,130,246,.2)}
-.hero h2{font-size:1.5rem;font-weight:800;margin-bottom:6px}
-.hero p{color:var(--tx2);font-size:.9rem}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:20px}
-.mode-card{background:var(--bg2);border:1.5px solid var(--br);border-radius:var(--rad);padding:20px;cursor:pointer;transition:all .2s;text-decoration:none;display:block}
+.hero{background:linear-gradient(135deg,#0f2744,#1e3a5f);border-radius:var(--rad);padding:22px 20px;margin-bottom:16px;border:1px solid rgba(59,130,246,.2)}
+.hero h2{font-size:1.4rem;font-weight:800;margin-bottom:6px}
+.hero p{color:var(--tx2);font-size:.88rem}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
+.mode-card{background:var(--bg2);border:1.5px solid var(--br);border-radius:var(--rad);padding:18px;cursor:pointer;transition:all .2s;text-decoration:none;display:block}
 .mode-card:hover{border-color:var(--acc);transform:translateY(-2px);box-shadow:0 8px 24px rgba(59,130,246,.15)}
-.mode-card .mc-icon{font-size:2rem;margin-bottom:10px}
-.mode-card h3{font-size:.95rem;font-weight:700;margin-bottom:4px}
-.mode-card p{font-size:.8rem;color:var(--tx2)}
-.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
-.stat-box{background:var(--bg2);border:1px solid var(--br);border-radius:var(--rad);padding:14px;text-align:center}
-.stat-box .sv{font-size:1.8rem;font-weight:800;color:var(--acc)}
-.stat-box .sl{font-size:.72rem;color:var(--tx2);margin-top:2px}
+.mode-card .mc-icon{font-size:1.8rem;margin-bottom:8px}
+.mode-card h3{font-size:.92rem;font-weight:700;margin-bottom:3px}
+.mode-card p{font-size:.78rem;color:var(--tx2)}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px}
+.stat-box{background:var(--bg2);border:1px solid var(--br);border-radius:var(--rad);padding:12px;text-align:center}
+.stat-box .sv{font-size:1.6rem;font-weight:800;color:var(--acc)}
+.stat-box .sl{font-size:.7rem;color:var(--tx2);margin-top:2px}
 /* FLASHCARDS */
-.fc-header{display:flex;align-items:center;gap:10px;margin-bottom:16px;flex-wrap:wrap}
-.fc-filter{background:var(--bg2);border:1px solid var(--br);border-radius:8px;padding:6px 10px;color:var(--tx);font-size:.8rem;cursor:pointer}
-.fc-filter:focus{outline:none;border-color:var(--acc)}
-.fc-progress{flex:1;background:var(--br);border-radius:10px;height:8px;overflow:hidden}
+.fc-header{display:flex;align-items:center;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+.fc-filter{background:var(--bg2);border:1px solid var(--br);border-radius:8px;padding:6px 10px;color:var(--tx);font-size:.78rem;cursor:pointer}
+.fc-progress{flex:1;background:var(--br);border-radius:10px;height:7px;overflow:hidden;min-width:60px}
 .fc-progress-fill{height:100%;background:linear-gradient(90deg,var(--acc),var(--pur));transition:width .3s}
-.fc-counter{font-size:.8rem;color:var(--tx2);white-space:nowrap}
-.card-wrap{perspective:1000px;margin:0 auto 20px;max-width:600px}
-.card{width:100%;min-height:260px;cursor:pointer;position:relative;transform-style:preserve-3d;transition:transform .55s cubic-bezier(.4,0,.2,1)}
+.fc-counter{font-size:.78rem;color:var(--tx2);white-space:nowrap}
+.card-wrap{perspective:1000px;margin:0 auto 16px;max-width:580px}
+.card{width:100%;min-height:240px;cursor:pointer;position:relative;transform-style:preserve-3d;transition:transform .5s cubic-bezier(.4,0,.2,1)}
 .card.flipped{transform:rotateY(180deg)}
-.card-front,.card-back{position:absolute;inset:0;backface-visibility:hidden;border-radius:var(--rad);padding:30px 28px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;border:1.5px solid var(--br)}
+.card-front,.card-back{position:absolute;inset:0;backface-visibility:hidden;border-radius:var(--rad);padding:24px 22px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;border:1.5px solid var(--br)}
 .card-front{background:linear-gradient(135deg,var(--bg2),var(--bg3))}
 .card-back{background:linear-gradient(135deg,#0f2744,#1a3a5c);border-color:rgba(59,130,246,.3);transform:rotateY(180deg)}
-.card-lf-badge{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--acc);background:rgba(59,130,246,.15);border:1px solid rgba(59,130,246,.25);border-radius:20px;padding:2px 10px;margin-bottom:14px}
-.card-term{font-size:1.35rem;font-weight:800;line-height:1.35;color:var(--tx)}
-.card-hint{font-size:.75rem;color:var(--tx3);margin-top:10px}
-.card-def{font-size:.92rem;line-height:1.65;color:var(--tx)}
+.card-lf-badge{font-size:.63rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--acc);background:rgba(59,130,246,.15);border:1px solid rgba(59,130,246,.25);border-radius:20px;padding:2px 10px;margin-bottom:12px}
+.card-term{font-size:1.25rem;font-weight:800;line-height:1.35;color:var(--tx)}
+.card-hint{font-size:.73rem;color:var(--tx3);margin-top:8px}
+.card-def{font-size:.88rem;line-height:1.65;color:var(--tx)}
 .card-def strong{color:#60a5fa}
 .card-controls{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
-.cc-btn{border:none;border-radius:10px;padding:11px 22px;cursor:pointer;font-size:.85rem;font-weight:700;transition:all .15s;display:flex;align-items:center;gap:6px}
+.cc-btn{border:none;border-radius:10px;padding:10px 20px;cursor:pointer;font-size:.83rem;font-weight:700;transition:all .15s}
 .cc-btn.wrong{background:rgba(239,68,68,.15);color:#f87171;border:1px solid rgba(239,68,68,.3)}
 .cc-btn.hard{background:rgba(234,179,8,.12);color:#fde047;border:1px solid rgba(234,179,8,.25)}
 .cc-btn.ok{background:rgba(34,197,94,.15);color:#86efac;border:1px solid rgba(34,197,94,.3)}
-.cc-btn:hover{filter:brightness(1.15)}
-.flip-hint{text-align:center;font-size:.75rem;color:var(--tx3);margin-bottom:16px}
+.flip-hint{text-align:center;font-size:.73rem;color:var(--tx3);margin-bottom:14px}
 /* QUIZ */
-.quiz-wrap{max-width:660px;margin:0 auto}
-.quiz-q{background:var(--bg2);border:1.5px solid var(--br);border-radius:var(--rad);padding:22px 24px;margin-bottom:16px}
-.qz-lf{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--acc);margin-bottom:8px}
-.qz-text{font-size:.98rem;font-weight:600;line-height:1.6;color:var(--tx)}
-.quiz-opts{display:flex;flex-direction:column;gap:8px;margin-bottom:16px}
-.qopt{background:var(--bg2);border:1.5px solid var(--br);border-radius:10px;padding:12px 16px;cursor:pointer;font-size:.87rem;color:var(--tx);transition:all .15s;text-align:left}
+.quiz-header{display:flex;align-items:center;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+.quiz-lf-filter{background:var(--bg2);border:1px solid var(--br);border-radius:8px;padding:6px 10px;color:var(--tx);font-size:.78rem}
+.quiz-progress-bar{flex:1;background:var(--br);border-radius:10px;height:7px;overflow:hidden;min-width:60px}
+.quiz-progress-fill{height:100%;background:linear-gradient(90deg,var(--grn),var(--acc));transition:width .3s}
+.quiz-wrap{max-width:680px;margin:0 auto}
+.quiz-q{background:var(--bg2);border:1.5px solid var(--br);border-radius:var(--rad);padding:20px 22px;margin-bottom:14px}
+.qz-lf{font-size:.63rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--acc);margin-bottom:7px}
+.qz-text{font-size:.95rem;font-weight:600;line-height:1.6;color:var(--tx)}
+.quiz-opts{display:flex;flex-direction:column;gap:7px;margin-bottom:14px}
+.qopt{background:var(--bg2);border:1.5px solid var(--br);border-radius:10px;padding:11px 14px;cursor:pointer;font-size:.85rem;color:var(--tx);transition:all .15s;text-align:left}
 .qopt:hover:not(.disabled){border-color:var(--acc);background:rgba(59,130,246,.08)}
-.qopt.correct{border-color:var(--grn)!important;background:rgba(34,197,94,.12)!important;color:#86efac!important}
+.qopt.correct{border-color:var(--grn)!important;background:rgba(34,197,94,.12)!important;color:#86efac!important;font-weight:600}
 .qopt.wrong{border-color:var(--red)!important;background:rgba(239,68,68,.1)!important;color:#f87171!important}
-.qopt.disabled{cursor:default;opacity:.7}
-.quiz-feedback{background:var(--bg3);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:.87rem;line-height:1.65;border-left:4px solid var(--grn);display:none}
+.qopt.disabled{cursor:default}
+.quiz-feedback{background:var(--bg3);border-radius:10px;padding:12px 14px;margin-bottom:14px;font-size:.84rem;line-height:1.65;border-left:4px solid var(--grn);display:none}
 .quiz-feedback.show{display:block}
 .quiz-feedback.err{border-left-color:var(--red)}
-.quiz-controls{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
-.qz-score{font-size:.85rem;color:var(--tx2)}
-.qz-next{background:var(--acc);color:white;border:none;border-radius:10px;padding:10px 24px;cursor:pointer;font-size:.88rem;font-weight:700;transition:opacity .15s}
-.qz-next:hover{opacity:.9}
-.qz-finish{background:linear-gradient(135deg,var(--grn),#16a34a);color:white;border:none;border-radius:10px;padding:10px 24px;cursor:pointer;font-size:.88rem;font-weight:700}
-/* RESULT SCREEN */
+.quiz-controls{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.qz-score{font-size:.82rem;color:var(--tx2)}
+.qz-next{background:var(--acc);color:white;border:none;border-radius:10px;padding:9px 22px;cursor:pointer;font-size:.85rem;font-weight:700}
 .result-screen{text-align:center;padding:40px 20px}
-.result-screen .big-score{font-size:4rem;font-weight:900;background:linear-gradient(135deg,var(--acc),var(--pur));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin:16px 0}
-.result-screen h2{font-size:1.3rem;font-weight:700;margin-bottom:8px}
-.result-screen p{color:var(--tx2);font-size:.9rem;margin-bottom:24px}
-.result-btns{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
-.rbtn{border:none;border-radius:10px;padding:11px 24px;cursor:pointer;font-size:.88rem;font-weight:700}
+.big-score{font-size:3.5rem;font-weight:900;background:linear-gradient(135deg,var(--acc),var(--pur));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin:14px 0}
+.result-btns{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:20px}
+.rbtn{border:none;border-radius:10px;padding:10px 22px;cursor:pointer;font-size:.85rem;font-weight:700}
 .rbtn.pri{background:var(--acc);color:white}
 .rbtn.sec{background:var(--bg2);color:var(--tx);border:1px solid var(--br)}
 /* FORMULA */
-.formula-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
-.formula-card{background:var(--bg2);border:1.5px solid var(--br);border-radius:var(--rad);overflow:hidden;transition:border-color .2s}
-.formula-card:hover{border-color:rgba(59,130,246,.4)}
-.fc-head{background:linear-gradient(135deg,#0f2744,#1a3a5c);padding:10px 14px;font-size:.82rem;font-weight:700;color:#7dd3fc;display:flex;align-items:center;gap:7px}
-.fc-body{padding:14px}
-.fc-formula{font-family:"JetBrains Mono","Fira Code","Courier New",monospace;font-size:.83rem;background:rgba(0,0,0,.3);border-radius:6px;padding:8px 12px;margin:6px 0;color:#7dd3fc;line-height:1.6;white-space:pre-wrap}
-.fc-desc{font-size:.78rem;color:var(--tx2);line-height:1.6;margin-top:6px}
-.calc-section{background:var(--bg3);border-radius:8px;padding:12px;margin-top:10px;border:1px solid var(--br)}
-.calc-section label{font-size:.75rem;color:var(--tx2);display:block;margin-bottom:3px}
-.calc-row{display:flex;gap:8px;align-items:flex-end;flex-wrap:wrap}
-.calc-input{background:var(--bg2);border:1px solid var(--br);border-radius:6px;padding:6px 10px;color:var(--tx);font-size:.84rem;width:90px}
-.calc-input:focus{outline:none;border-color:var(--acc)}
-.calc-btn{background:var(--acc);color:white;border:none;border-radius:6px;padding:7px 14px;cursor:pointer;font-size:.8rem;font-weight:600;white-space:nowrap}
-.calc-result{margin-top:8px;font-size:.85rem;font-weight:700;color:var(--grn);min-height:20px}
-/* PROGRESS PAGE */
-.prog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
-.prog-card{background:var(--bg2);border:1.5px solid var(--br);border-radius:var(--rad);padding:16px}
-.pc-top{display:flex;align-items:center;gap:8px;margin-bottom:10px}
-.pc-icon{font-size:1.2rem}
-.pc-title{font-size:.82rem;font-weight:700}
-.pc-bar{background:var(--br);border-radius:10px;height:6px;overflow:hidden;margin-bottom:6px}
+.formula-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:12px}
+.formula-card{background:var(--bg2);border:1.5px solid var(--br);border-radius:var(--rad);overflow:hidden}
+.fc-head{background:linear-gradient(135deg,#0f2744,#1a3a5c);padding:10px 14px;font-size:.8rem;font-weight:700;color:#7dd3fc;display:flex;align-items:center;gap:6px}
+.fc-body{padding:12px}
+.fc-formula{font-family:"JetBrains Mono","Fira Code","Courier New",monospace;font-size:.81rem;background:rgba(0,0,0,.3);border-radius:6px;padding:8px 12px;margin:6px 0;color:#7dd3fc;line-height:1.6;white-space:pre-wrap}
+.fc-desc{font-size:.76rem;color:var(--tx2);line-height:1.6;margin-top:5px}
+.calc-section{background:var(--bg3);border-radius:8px;padding:10px;margin-top:8px;border:1px solid var(--br)}
+.calc-row{display:flex;gap:7px;align-items:flex-end;flex-wrap:wrap;margin-top:5px}
+.calc-label{font-size:.72rem;color:var(--tx2);display:block;margin-bottom:2px}
+.calc-input{background:var(--bg2);border:1px solid var(--br);border-radius:6px;padding:5px 8px;color:var(--tx);font-size:.82rem;width:85px}
+.calc-btn{background:var(--acc);color:white;border:none;border-radius:6px;padding:6px 12px;cursor:pointer;font-size:.78rem;font-weight:600;white-space:nowrap}
+.calc-result{margin-top:7px;font-size:.83rem;font-weight:700;color:var(--grn);min-height:18px;font-family:monospace}
+/* PROGRESS */
+.prog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
+.prog-card{background:var(--bg2);border:1.5px solid var(--br);border-radius:var(--rad);padding:14px}
+.pc-top{display:flex;align-items:center;gap:7px;margin-bottom:8px}
+.pc-bar{background:var(--br);border-radius:10px;height:5px;overflow:hidden;margin-bottom:5px}
 .pc-bar-fill{height:100%;border-radius:10px;transition:width .4s}
-.pc-stats{display:flex;justify-content:space-between;font-size:.72rem;color:var(--tx2)}
-.reset-btn{background:none;border:1px solid var(--red);color:var(--red);border-radius:8px;padding:8px 18px;cursor:pointer;font-size:.8rem;margin-top:20px}
+.pc-stats{display:flex;justify-content:space-between;font-size:.7rem;color:var(--tx2)}
+.reset-btn{background:none;border:1px solid var(--red);color:var(--red);border-radius:8px;padding:8px 16px;cursor:pointer;font-size:.78rem;margin-top:18px}
+/* LERNPLAN */
+.plan-grid{display:flex;flex-direction:column;gap:10px}
+.plan-week{background:var(--bg2);border:1.5px solid var(--br);border-radius:var(--rad);overflow:hidden}
+.plan-week-hdr{background:linear-gradient(135deg,#0f2744,#1a3a5c);padding:10px 16px;font-size:.85rem;font-weight:700;color:#7dd3fc;display:flex;justify-content:space-between;align-items:center}
+.plan-week-hdr .pb-badge{background:rgba(59,130,246,.25);border:1px solid rgba(59,130,246,.4);border-radius:20px;padding:2px 10px;font-size:.7rem;color:#93c5fd}
+.plan-day{display:flex;align-items:flex-start;gap:10px;padding:10px 16px;border-bottom:1px solid var(--br)}
+.plan-day:last-child{border-bottom:none}
+.plan-day-date{font-size:.72rem;font-weight:700;color:var(--tx2);min-width:55px;padding-top:2px}
+.plan-day-content{flex:1}
+.plan-day-lf{font-size:.82rem;font-weight:600;margin-bottom:2px}
+.plan-day-topics{font-size:.75rem;color:var(--tx2);line-height:1.5}
+.exam-marker{background:rgba(239,68,68,.15);border-left:3px solid var(--red);}
+.exam-marker .plan-day-lf{color:#f87171}
 /* BOTTOM NAV */
 .bottom-nav{display:none;position:fixed;bottom:0;left:0;right:0;background:#0b1526;border-top:1px solid var(--br);z-index:100}
-.bottom-nav .nav-tabs{justify-content:space-around;padding:6px 4px env(safe-area-inset-bottom,6px)}
-.bottom-nav .ntab{flex:1;flex-direction:column;text-align:center;padding:6px 4px;font-size:.58rem;gap:2px;border:none;background:none;border-radius:6px}
-.bottom-nav .ntab span:first-child{font-size:1rem}
-@media(max-width:680px){
+.bottom-nav .nav-tabs{justify-content:space-around;padding:5px 4px env(safe-area-inset-bottom,5px)}
+.bottom-nav .ntab{flex:1;flex-direction:column;text-align:center;padding:5px 3px;font-size:.55rem;gap:1px;border:none;background:none;border-radius:6px;display:flex;align-items:center}
+.bottom-nav .ntab span:first-child{font-size:.9rem}
+@media(max-width:660px){
   .grid2{grid-template-columns:1fr}
   .stats-row{grid-template-columns:repeat(2,1fr)}
   .bottom-nav{display:block}
-  .nav-tabs{display:none}
   body{padding-bottom:64px}
   .page{padding-bottom:90px}
 }
@@ -129,13 +131,14 @@ body{font-family:var(--font);background:var(--bg);color:var(--tx);min-height:100
 </head>
 <body>
 <div class="nav">
-  <h1>🎓 <span>VMT</span> Lern-App</h1>
+  <h1>🎓 <span>VMT</span> Lern-App | Lucas Strauch</h1>
   <a href="VMT_Komplett_NEU.html" class="home-btn">◀ Hauptapp</a>
   <div class="nav-tabs">
     <button class="ntab act" onclick="showPage('home')">🏠 Start</button>
     <button class="ntab" onclick="showPage('flash')">🃏 Karten</button>
     <button class="ntab" onclick="showPage('quiz')">❓ Quiz</button>
     <button class="ntab" onclick="showPage('formeln')">📐 Formeln</button>
+    <button class="ntab" onclick="showPage('plan')">📅 Lernplan</button>
     <button class="ntab" onclick="showPage('progress')">📊 Fortschritt</button>
   </div>
 </div>
@@ -144,36 +147,19 @@ body{font-family:var(--font);background:var(--bg);color:var(--tx);min-height:100
 <div class="page act" id="page-home">
   <div class="hero">
     <h2>👋 Hallo, Lucas!</h2>
-    <p>Deine Prüfungen stehen an – hier kannst du Kernbegriffe, Quiz und Formeln üben.</p>
-    <div id="home-countdown" style="margin-top:14px;font-size:.82rem;color:#7dd3fc;font-weight:600"></div>
+    <p id="home-countdown">Lädt Countdown…</p>
   </div>
   <div class="grid2">
-    <div class="mode-card" onclick="showPage('flash')">
-      <div class="mc-icon">🃏</div>
-      <h3>Karteikarten</h3>
-      <p>Alle Kernbegriffe aus LF1–13 als Flashcards mit Lernfortschritt</p>
-    </div>
-    <div class="mode-card" onclick="showPage('quiz')">
-      <div class="mc-icon">❓</div>
-      <h3>Prüfungsquiz</h3>
-      <p>Multiple-Choice-Fragen aus allen Lernfeldern</p>
-    </div>
-    <div class="mode-card" onclick="showPage('formeln')">
-      <div class="mc-icon">📐</div>
-      <h3>Formelrechner</h3>
-      <p>Interaktive Rechner für Nivellement, Tachymetrie, UTM und mehr</p>
-    </div>
-    <div class="mode-card" onclick="showPage('progress')">
-      <div class="mc-icon">📊</div>
-      <h3>Lernfortschritt</h3>
-      <p>Statistiken zu Karten und Quiz je Lernfeld</p>
-    </div>
+    <div class="mode-card" onclick="showPage('flash')"><div class="mc-icon">🃏</div><h3>Karteikarten</h3><p>111 Begriffe aus LF1–13</p></div>
+    <div class="mode-card" onclick="showPage('quiz')"><div class="mc-icon">❓</div><h3>Prüfungsquiz</h3><p>100+ Fragen aus allen Lernfeldern</p></div>
+    <div class="mode-card" onclick="showPage('formeln')"><div class="mc-icon">📐</div><h3>Formelrechner</h3><p>Interaktiv: Nivellement, Tachymetrie, UTM…</p></div>
+    <div class="mode-card" onclick="showPage('plan')"><div class="mc-icon">📅</div><h3>Lernplan</h3><p>Tag-für-Tag bis zur Prüfung</p></div>
   </div>
-  <div class="stats-row" id="home-stats">
-    <div class="stat-box"><div class="sv" id="st-total">-</div><div class="sl">Karten gesamt</div></div>
-    <div class="stat-box"><div class="sv" id="st-known">0</div><div class="sl">Gelernt</div></div>
+  <div class="stats-row">
+    <div class="stat-box"><div class="sv" id="st-total">111</div><div class="sl">Karten gesamt</div></div>
+    <div class="stat-box"><div class="sv" id="st-known">0</div><div class="sl">Gelernt ✓</div></div>
     <div class="stat-box"><div class="sv" id="st-qright">0</div><div class="sl">Quiz richtig</div></div>
-    <div class="stat-box"><div class="sv" id="st-streak">0</div><div class="sl">🔥 Streak</div></div>
+    <div class="stat-box"><div class="sv" id="st-quiz-total">0</div><div class="sl">Quiz gespielt</div></div>
   </div>
 </div>
 
@@ -181,7 +167,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--tx);min-height:100
 <div class="page" id="page-flash">
   <div class="fc-header">
     <select class="fc-filter" id="fc-lf-filter" onchange="initFlash()">
-      <option value="all">Alle LF (gesamt)</option>
+      <option value="all">Alle LF</option>
       <option value="LF1">LF1 – Grundlagen</option>
       <option value="LF2">LF2 – Geodätische Grundlagen</option>
       <option value="LF3">LF3 – Höhenmessung</option>
@@ -209,8 +195,8 @@ body{font-family:var(--font);background:var(--bg);color:var(--tx);min-height:100
     <div class="card" id="flashcard" onclick="flipCard()">
       <div class="card-front">
         <div class="card-lf-badge" id="fc-badge">LF1</div>
-        <div class="card-term" id="fc-term">Lädt…</div>
-        <div class="card-hint">Begriff aus dem Lernfeld</div>
+        <div class="card-term" id="fc-term">…</div>
+        <div class="card-hint">Begriff – zum Umdrehen tippen</div>
       </div>
       <div class="card-back">
         <div class="card-lf-badge" id="fc-badge2">LF1</div>
@@ -227,6 +213,30 @@ body{font-family:var(--font);background:var(--bg);color:var(--tx);min-height:100
 
 <!-- QUIZ -->
 <div class="page" id="page-quiz">
+  <div class="quiz-header">
+    <select class="quiz-lf-filter" id="quiz-lf-filter" onchange="initQuiz()">
+      <option value="all">Alle LF (Mix)</option>
+      <option value="LF1">LF1 – Grundlagen</option>
+      <option value="LF2">LF2 – Geodätische Grundlagen</option>
+      <option value="LF3">LF3 – Höhenmessung & Nivellement</option>
+      <option value="LF4">LF4 – Lagemessung & Koordinaten</option>
+      <option value="LF5">LF5 – ALKIS & Kataster</option>
+      <option value="LF6">LF6 – Bauleitplanung I</option>
+      <option value="LF7">LF7 – Ingenieurvermessung</option>
+      <option value="LF8">LF8 – Topographie & Kartographie</option>
+      <option value="LF9">LF9 – GIS & Geodaten</option>
+      <option value="LF10">LF10 – Bauleitplanung II</option>
+      <option value="LF11">LF11 – Wertermittlung I</option>
+      <option value="LF12">LF12 – Wertermittlung II</option>
+      <option value="LF13">LF13 – Trig. Höhenmessung</option>
+      <option value="Pb1">Pb1 – Betrieblicher Auftrag</option>
+      <option value="Pb2">Pb2 – Geodatenbearbeitung</option>
+      <option value="Pb3">Pb3 – Öffentliche Aufgaben</option>
+      <option value="Pb4">Pb4 – Wirtschaft & Soziales</option>
+    </select>
+    <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="quiz-prog"></div></div>
+    <span class="fc-counter" id="quiz-counter">0/0</span>
+  </div>
   <div class="quiz-wrap" id="quiz-wrap"></div>
 </div>
 
@@ -235,412 +245,443 @@ body{font-family:var(--font);background:var(--bg);color:var(--tx);min-height:100
   <div class="formula-grid" id="formula-grid"></div>
 </div>
 
+<!-- LERNPLAN -->
+<div class="page" id="page-plan">
+  <div class="plan-grid" id="plan-grid"></div>
+</div>
+
 <!-- PROGRESS -->
 <div class="page" id="page-progress">
-  <h2 style="font-size:1rem;font-weight:700;margin-bottom:16px">📊 Lernfortschritt nach Lernfeld</h2>
+  <h2 style="font-size:.95rem;font-weight:700;margin-bottom:14px">📊 Lernfortschritt nach Lernfeld</h2>
   <div class="prog-grid" id="prog-grid"></div>
   <button class="reset-btn" onclick="resetProgress()">🗑 Fortschritt zurücksetzen</button>
 </div>
 
-<!-- BOTTOM NAV (mobile) -->
+<!-- BOTTOM NAV -->
 <div class="bottom-nav">
   <div class="nav-tabs">
     <button class="ntab act" onclick="showPage('home')"><span>🏠</span><span>Start</span></button>
     <button class="ntab" onclick="showPage('flash')"><span>🃏</span><span>Karten</span></button>
     <button class="ntab" onclick="showPage('quiz')"><span>❓</span><span>Quiz</span></button>
     <button class="ntab" onclick="showPage('formeln')"><span>📐</span><span>Formeln</span></button>
-    <button class="ntab" onclick="showPage('progress')"><span>📊</span><span>Fortschritt</span></button>
+    <button class="ntab" onclick="showPage('plan')"><span>📅</span><span>Plan</span></button>
   </div>
 </div>
 
 <script>
-// ═══════════════════════════════════════════════════════════════════
-// DATA
-// ═══════════════════════════════════════════════════════════════════
+// ═══════════════════════════ FLASHCARD DATA ═══════════════════════════
 const CARDS = [
-  // LF1
-  {lf:'LF1',t:'BBiG',d:'<strong>Berufsbildungsgesetz</strong> – zentrale Rechtsgrundlage der dualen Berufsausbildung. Regelt Ausbildungsvertrag (§10), Pflichten (§13/§14), Probezeit (§20) und Kündigung (§22).'},
-  {lf:'LF1',t:'Probezeit',d:'Mindestens <strong>1 Monat</strong>, höchstens <strong>4 Monate</strong> (§20 BBiG). In dieser Zeit beidseitige Kündigung ohne Frist möglich.'},
-  {lf:'LF1',t:'JArbSchG',d:'Jugendarbeitsschutzgesetz – gilt bis 18 Jahre. Maximal <strong>8h/Tag, 40h/Woche</strong>. Pause ab 4,5h: 30 min; ab 6h: 60 min. Nachtruhe 20–6 Uhr.'},
-  {lf:'LF1',t:'ÖbVI',d:'<strong>Öffentlich bestellter Vermessungsingenieur</strong> – Freiberufler mit hoheitlichen Befugnissen (Beleihung). Führt Grenzfeststellungen, Gebäudeeinmessungen durch. Untersteht Aufsicht des LAiV M-V.'},
-  {lf:'LF1',t:'LAiV M-V',d:'<strong>Landesamt für innere Verwaltung</strong> Mecklenburg-Vorpommern – zuständig für Landesvermessung, ALKIS, SAPOS, Fachaufsicht über Katasterbehörden und Prüfungen (VMT).'},
-  {lf:'LF1',t:'Beleihung',d:'Übertragung hoheitlicher Befugnisse auf einen Privatmann (ÖbVI). Der ÖbVI ist kein Beamter, handelt aber im Namen des Staates mit öffentlicher Autorität.'},
-  {lf:'LF1',t:'GUV',d:'Gesetzliche Unfallversicherung – einziger Zweig der Sozialversicherung, der <strong>ausschließlich vom Arbeitgeber</strong> getragen wird (100% AG).'},
-  {lf:'LF1',t:'GeoVermG M-V',d:'Gesetz über das amtliche Vermessungswesen in MV. §4: LAiV-Aufgaben, §6: Katasterbehörden, §14: <strong>Gebäudeeinmessungspflicht</strong> des Eigentümers, §15–22: ÖbVI.'},
-  {lf:'LF1',t:'Berichtsheft',d:'Ausbildungsnachweis – muss regelmäßig und wahrheitsgemäß geführt und vom Ausbilder gegengezeichnet werden. Zulassungsvoraussetzung zur Abschlussprüfung (§43 BBiG).'},
-  {lf:'LF1',t:'PSA',d:'<strong>Persönliche Schutzausrüstung</strong>: Warnschutzweste (Kl. 2/3), Sicherheitsschuhe (S3), Schutzhelm (EN 397), Schutzbrille. Besonders im Außendienst MV: Zeckenschutz wichtig (FSME-Gebiet).'},
-  // LF2
-  {lf:'LF2',t:'Geoid',d:'<strong>Physikalische Erdfigur</strong> – Äquipotentialfläche des Erdschwerefelds, fällt mit mittlerem Meeresspiegel zusammen. Bezugsfläche für Höhenmessungen (NHN).'},
-  {lf:'LF2',t:'NHN',d:'<strong>Normalhöhennull</strong> – amtliches Höhenbezugssystem im DHHN2016. Bezugspegel: Amsterdam (NAP). Alle amtlichen Höhen in MV beziehen sich auf NHN.'},
-  {lf:'LF2',t:'GRS80',d:'Geodetic Reference System 1980 – Ellipsoid für ETRS89. Große Halbachse: <strong>6 378 137,000 m</strong>. Basis für alle europäischen und deutschen Lage-Koordinaten.'},
-  {lf:'LF2',t:'ETRS89',d:'European Terrestrial Reference System 1989 – geocentrisch, an eurasische Platte gebunden. Ellipsoid: GRS80. Koordinaten sind über die Zeit stabil (kein Drift).'},
-  {lf:'LF2',t:'UTM',d:'Universal Transverse Mercator – winkeltreue transversale Zylinderprojektion. Streifenbreite: <strong>6°</strong>. Maßstabsfaktor: <strong>m₀ = 0,9996</strong>. MV: Zone 32N und 33N (Empfehlung: 33N, EPSG:25833).'},
-  {lf:'LF2',t:'Geoidundulation (N)',d:'<strong>H_NHN = h_ellipsoidisch − N</strong>. N = Abstand zwischen Geoid und Ellipsoid. In MV: N ≈ 35–47 m (GCG2016). GNSS misst h, Geoidmodell rechnet auf H_NHN um.'},
-  {lf:'LF2',t:'SAPOS® HEPS',d:'Hochpräzisions-EPS: <strong>1–3 cm Lage, 2–5 cm Höhe</strong>. Verfahren: RTK (Real Time Kinematic). Anwendung: Katastervermessung, Absteckung, ALKIS-Aufnahme in MV.'},
-  {lf:'LF2',t:'DOP',d:'<strong>Dilution of Precision</strong> – Maß für Satellitengeometrie. Kleiner DOP = gute Geometrie. PDOP < 3 anstreben. Hoher DOP → schlechtere Genauigkeit.'},
-  {lf:'LF2',t:'DHHN2016',d:'Deutsches Haupthöhennetz 2016 – aktuelles amtliches Höhenbezugssystem. Abgelöst DHHN92 (Differenz in MV typisch 1–4 cm).'},
-  {lf:'LF2',t:'Multipath',d:'Mehrwegeeffekt – GPS-Signalreflexionen an Gebäuden/Bäumen, täuscht falsche Position vor. Minimierung durch: Abschirmantennen, freie Standortwahl, SAPOS-Korrektur.'},
-  // LF3
-  {lf:'LF3',t:'Gon',d:'Winkeleinheit in der deutschen Vermessung. Vollkreis = <strong>400 gon</strong>. Umrechnung: gon = ° × 10/9. Rechter Winkel = 100 gon. Halbkreis = 200 gon.'},
-  {lf:'LF3',t:'Δh = R − V',d:'Grundformel Nivellement: Höhenunterschied = <strong>Rückblick minus Vorblick</strong>. Instrumentenhorizont: IH = H_A + R. Höhe Neupunkt: H_B = IH − V.'},
-  {lf:'LF3',t:'Schlussfehler (Nivellement)',d:'f_h = Σ(R−V) − (H_Ende − H_Anfang). Toleranz Feinnivellement: <strong>±3 mm × √L[km]</strong>. Technisches Niv.: ±10 mm × √L[km].'},
-  {lf:'LF3',t:'Kompensator',d:'Pendelspiegel- oder Prismenpendelsystem im Nivellier – hält Ziellinie automatisch horizontal innerhalb ±15\'. Ersetzt manuelle Libellenjustierung.'},
-  {lf:'LF3',t:'Goldene Regel Nivellement',d:'<strong>Rückblickweite = Vorblickweite!</strong> Eliminiert: Zielachsenfehler (i-Winkel), Erdkrümmungseinfluss, Refraktion. Max. ±2 m Differenz, ideal 20–50 m.'},
-  {lf:'LF3',t:'Zwei-Lagen-Messung',d:'Messung in Lage I und Lage II (Fernrohr um 200 gon gedreht). Eliminiert: Zielachsenfehler (c), Kippachsenfehler (i), Kollimationsfehler. Mittelwert = genauer Messwert.'},
-  {lf:'LF3',t:'Richtungswinkel',d:'Winkel vom Nordhalbstrahl (X-Achse) im Uhrzeigersinn (0–400 gon). tan(t) = ΔY/ΔX. Quadrantenregel beachten! I: t=arctan | II/III: t=arctan+200 | IV: t=arctan+400.'},
-  {lf:'LF3',t:'Freie Stationierung',d:'Standpunkt wird NICHT auf Festpunkt aufgestellt. Koordinaten werden aus Messungen zu ≥2 Festpunkten berechnet. Vorteil: freie Wahl des Standpunkts. Methode: Helmert-Transformation.'},
-  {lf:'LF3',t:'Totalstation (EDM)',d:'Universalinstrument – kombiniert Theodolit (Winkel) und EDM (Distanzmesser). Misst: Horizontalwinkel (Hz), Zenitwinkel (V), Schrägdistanz (SD). Genauigkeit: 1–2 mm + 2 ppm.'},
-  {lf:'LF3',t:'Vermessungsriss',d:'Handgezeichnete Skizze der Örtlichkeit mit Punktnummern, Risszahlen, Gebäudeumrissen. Rechtlich relevantes Katasterunterlage. Inhalt: Nordpfeil, Maßstab, Datum, Unterschrift ÖbVI.'},
-  // LF4
-  {lf:'LF4',t:'Vorwärtsschnitt',d:'Koordinaten-Bestimmung eines <strong>nicht zugänglichen</strong> Punktes P durch Richtungsmessungen von ≥2 bekannten Punkten A, B. Kontrolle durch 3. Festpunkt.'},
-  {lf:'LF4',t:'Rückwärtsschnitt (Resektion)',d:'Eigenen Standpunkt P bestimmen durch Richtungsmessungen zu ≥3 Festpunkten A,B,C. Achtung: Gefährlicher Ort (Pothenot-Kreis) – P darf nicht auf Umkreis liegen!'},
-  {lf:'LF4',t:'Bogenschnitt',d:'Neupunkt P aus <strong>2 Strecken</strong> s_AP und s_BP. Hilfswinnkel: cos(ε) = (s_AB² + s_AP² − s_BP²) / (2 × s_AB × s_AP). Zwei geometrische Lösungen → Plausibilitätsprüfung!'},
-  {lf:'LF4',t:'Polygonzug',d:'Kette von Punkten verbunden durch gemessene Strecken und Richtungen. Arten: beidseitig angeschlossen (Regelfall), einseitig, geschlossen (Ring). Winkelsummenprobe: Σβ = (n+1)×200 gon.'},
-  {lf:'LF4',t:'Winkelabschluss (Polygonzug)',d:'Winkelfehler fw = Σβ_gem − Σβ_soll. Toleranz: fw,zul = ±30\'\'\' × √n (n = Anzahl Richtungen). Gleichmäßige Verteilung auf alle Brechungswinkel.'},
-  {lf:'LF4',t:'Helmert-Transformation',d:'4-Parameter-Transformation: Translation (2), Rotation (1), Maßstab (1). Einbindung lokaler Koordinaten in Landesnetz. Mindestens <strong>2 identische Passpunkte</strong> erforderlich.'},
-  {lf:'LF4',t:'Methode der kleinsten Quadrate (MKQ)',d:'Ausgleichungsrechnung: Minimiert Summe der quadratischen Verbesserungen Σv² → min. Liefert wahrscheinlichsten Wert und Genauigkeitsmaß (Standardabweichung).'},
-  {lf:'LF4',t:'Redundanz',d:'Anzahl überschüssiger Beobachtungen (Messwerte minus Unbekannte). R = n − u. Höhere Redundanz → bessere Qualitätskontrolle und zuverlässigere Fehlerentdeckung.'},
-  // LF5
-  {lf:'LF5',t:'ALKIS',d:'<strong>Amtliches Liegenschaftskatasterinformationssystem</strong> – ablöste ALK (Grafik) und ALB (Attribute). Enthält: Flurstücke, Gebäude, Eigentümer, Nutzungsarten. Daten in NAS-Format.'},
-  {lf:'LF5',t:'Flurstück',d:'Kleinstes katasterrechtliches Einheit des Liegenschaftskatasters. Eindeutig: Gemarkung + Flur + Flurstücksnummer. Jede Änderung → Fortführung im ALKIS.'},
-  {lf:'LF5',t:'NAS',d:'<strong>Normbasierte Austauschschnittstelle</strong> – Dateiformat für ALKIS-Daten (XML-basiert, GML). Trägt Geometrie und Sachdaten gemeinsam. Import/Export zwischen Katastersystemen.'},
-  {lf:'LF5',t:'Übereinstimmungsgebot',d:'Grundbuch und Liegenschaftskataster müssen in Grenzen übereinstimmen. Widerspruch → Antrag auf Berichtigung. Kataster führt ALKIS, Grundbuch führt Amtsgericht.'},
-  {lf:'LF5',t:'Grenzfeststellung',d:'Rechtlich bindende Bestimmung der genauen Grenzlage. Durchgeführt von ÖbVI oder Katasterbehörde. Ergebnis: <strong>Grenzniederschrift</strong> mit Unterschriften der Eigentümer.'},
-  {lf:'LF5',t:'Zerlegung',d:'Aufteilen eines Flurstücks in ≥2 neue Flurstücke. Ablauf: Antrag → Katastervermessung → Grenzfeststellung → Fortführung ALKIS + Grundbuch.'},
-  // LF6
-  {lf:'LF6',t:'BauGB',d:'<strong>Baugesetzbuch</strong> – regelt Bauleitplanung (FNP, B-Plan), Umlegung, Bodenordnung. §1: Aufgabe und Grundsätze der Bauleitplanung.'},
-  {lf:'LF6',t:'BauNVO',d:'Baunutzungsverordnung – Ergänzung BauGB. Regelt: GRZ (max. 0,6 WA), GFZ, BMZ, Art der baulichen Nutzung (WA, MI, GE, GI usw.).'},
-  {lf:'LF6',t:'GRZ',d:'<strong>Grundflächenzahl</strong> – Verhältnis überbaubare Grundfläche zur Grundstücksfläche. GRZ 0,4 = max. 40% des Grundstücks bebaubar. Mit Überschreitungsregel (GRZ + 50% für Nebenanlagen).'},
-  {lf:'LF6',t:'GFZ',d:'<strong>Geschossflächenzahl</strong> – Summe aller Geschossflächen geteilt durch Grundstücksfläche. GFZ 0,8 = max. 80% Geschossfläche je m² Grundstück.'},
-  {lf:'LF6',t:'Umlegung',d:'Bodenordnungsverfahren nach §45ff BauGB. Tausch von Grundstücken um erschlossene Baugrundstücke zu schaffen. Einwurfsmasse → Verteilungsmasse (nach Abzug Erschließungsflächen).'},
-  {lf:'LF6',t:'Erschließungsbeitrag',d:'Kostenbeteiligung der Grundstückseigentümer an Erschließungsanlagen (Straßen, Kanalisation). Gesetzliche Grundlage: §127ff BauGB. Berechnung nach Grundstücksfläche und -lage.'},
-  // LF7
-  {lf:'LF7',t:'Grobabsteckung',d:'Erste Absteckungsphase – Lage des Bauwerks im Gelände mit Toleranz ±20–50 cm. Grundriss-Ecken werden grob eingemessen, z.B. mit Totalstation oder GNSS.'},
-  {lf:'LF7',t:'Feinabsteckung',d:'Zweite Absteckungsphase – Lage mit Toleranz ±5–10 mm. Schnurgerüst mit Absteckpflöcken und Schnüren. Grundlage für Ausschachtung und Fundamentbau.'},
-  {lf:'LF7',t:'Meterriss',d:'Horizontale Markierung an Schalung oder Wand in <strong>genau 1,000 m</strong> über Oberkante Fertigfußboden (OKFF). Höhe über NHN bekannt – Höhenübertragung durch Nivellement.'},
-  {lf:'LF7',t:'Monitoring',d:'Überwachungsmessung an Bauwerken und Geländepunkten. Vergleich: Nullmessung → Folgemessungen → <strong>Deformationsvektor</strong>. Messmethoden: Präzisionsnivellement, Totalstation, Inklinometer.'},
-  {lf:'LF7',t:'Schnurgerüst',d:'Holzkonstruktion aus Pflöcken und gespannten Schnüren. Definiert die genaue Lage von Mauerwerk und Fundamenten. Außenmaß Mauerwerk = Bezugslinie für alle weiteren Arbeiten.'},
-  {lf:'LF7',t:'DIN 18710',d:'Normen für Ingenieurvermessung: Genauigkeitsstufen, Dokumentation, Absteckungsaufgaben. Regelt zulässige Abweichungen bei Baudurchführungsvermessungen.'},
-  // LF8
-  {lf:'LF8',t:'LiDAR / ALS',d:'<strong>Airborne Laser Scanning</strong> – Laserscanning aus Flugzeug. Liefert hochdichte Punktwolke. Aus DSM (mit Vegetation) → DGM (ohne Vegetation) = 1. Rückgabe.'},
-  {lf:'LF8',t:'DGM',d:'<strong>Digitales Geländemodell</strong> – nur Erdoberfläche ohne Vegetation/Bebauung. TIN oder Rasterpunkte. In MV: DGM1 (1m Raster), DGM5 (5m Raster). Basis für Höhenlinien.'},
-  {lf:'LF8',t:'DOM',d:'<strong>Digitales Oberflächenmodell</strong> – enthält alle Objekte (Gebäude, Bäume). nDOM = normiertes DOM (DOM − DGM) = zeigt Objekthöhen über Gelände.'},
-  {lf:'LF8',t:'TIN',d:'<strong>Triangulated Irregular Network</strong> – Geländemodell aus Dreiecken. Bruchkanten (Böschungskanten) werden als harte Kanten integriert. Präzisere Geländedarstellung als Raster.'},
-  {lf:'LF8',t:'Isohypse',d:'Höhenlinie im Geländemodell. Verbindet Punkte gleicher Höhe. Äquidistanz = Höhenabstand zwischen zwei benachbarten Isohypsen. Topographische Karten: 10m, 20m, 50m usw.'},
-  // LF9
-  {lf:'LF9',t:'GIS',d:'<strong>Geographisches Informationssystem</strong> – System zur Erfassung, Verwaltung, Analyse und Visualisierung raumbezogener Daten. Beispiele: QGIS (Open Source), ArcGIS (ESRI).'},
-  {lf:'LF9',t:'WMS',d:'<strong>Web Map Service</strong> – OGC-Standard für Kartenbilder als Raster (JPG/PNG) über HTTP. Nicht editierbar. Beispiel: DTK-Dienste des LAiV über GeoMV-Portal.'},
-  {lf:'LF9',t:'WFS',d:'<strong>Web Feature Service</strong> – OGC-Standard für Vektordaten (GML/GeoJSON). Einzelne Objekte abfragbar/editierbar. Höhere Datentiefe als WMS.'},
-  {lf:'LF9',t:'GDI-MV',d:'<strong>Geodateninfrastruktur Mecklenburg-Vorpommern</strong> – Landesportal für Geodaten. Bietet WMS, WFS, WMTS. Zugang zu ALKIS, ATKIS, DGM-Daten des LAiV M-V.'},
-  {lf:'LF9',t:'Topologie',d:'Räumliche Beziehungen zwischen Geometrien: Adjacenz (benachbart), Inklusion, Überschneidung. GIS-Topologie verhindert Lücken und Überlappungen in Flächengeometrien.'},
-  {lf:'LF9',t:'Vektordaten vs. Rasterdaten',d:'<strong>Vektor:</strong> Punkte, Linien, Flächen mit Attributen – präzise, skalierbar. <strong>Raster:</strong> Pixelgitter mit Zellwert – gut für Fernerkundung, DGM. Umwandlung: Rasterisierung / Vektorisierung.'},
-  // LF10
-  {lf:'LF10',t:'Bebauungsplan (B-Plan)',d:'Verbindlicher Bauleitplan nach BauGB. Bestimmt Art (WA, GE…) und Maß (GRZ, GFZ, BH) der baulichen Nutzung für einzelne Grundstücke. Satzung der Gemeinde.'},
-  {lf:'LF10',t:'FNP (Flächennutzungsplan)',d:'Vorbereitender Bauleitplan – stellt geplante Nutzungen für gesamtes Gemeindegebiet dar. Nicht rechtverbindlich für Bürger, bindet aber andere Behörden (§35 BauGB).'},
-  {lf:'LF10',t:'Grenzbegradigung',d:'Katasterverfahren: Grenzausgleich zwischen benachbarten Eigentümern. Gleich große Flächen werden getauscht → gerade Grenzlinie entsteht. Ablauf wie Zerlegung + Fortführung.'},
-  {lf:'LF10',t:'Abmarkung',d:'Physische Kennzeichnung von Grenzpunkten im Gelände durch Vermarkung (Stein, Bolzen, Rohr). Pflicht nach Grenzfeststellung. Unterlassung = Ordnungswidrigkeit.'},
-  // LF11
-  {lf:'LF11',t:'ImmoWertV 2021',d:'Immobilienwertermittlungsverordnung 2021 – Bundesrecht. Regelt Verkehrswert (= Marktwert § 194 BauGB). Drei Verfahren: Vergleichswert, Ertragswert, Sachwert.'},
-  {lf:'LF11',t:'Bodenrichtwert',d:'Durchschnittlicher Lagewert des Bodens je m² in einem Gebiet. Ermittelt durch <strong>Gutachterausschuss</strong>. In MV abrufbar über BORIS.MV. Basis für viele Wertermittlungen.'},
-  {lf:'LF11',t:'Vergleichswertverfahren',d:'Wert aus Kaufpreisen vergleichbarer Objekte. Direkteste Methode. Voraussetzung: ausreichende Vergleichspreise. Gutachterausschuss führt Kaufpreissammlung.'},
-  {lf:'LF11',t:'Ertragswertverfahren',d:'Wert aus Ertragspotenzial: V = Bodenwert + Gebäudeertragswert. Gebäudeertragswert = Reinertrag × Vervielfältiger. Anwendung: Renditeimmobilien, Mietwohnhäuser.'},
-  {lf:'LF11',t:'Sachwertverfahren',d:'Wert aus Herstellungskosten: V = Bodenwert + Gebäudesachwert. Gebäudesachwert = NHK 2010 × BGF × Marktanpassungsfaktor × (1 − Alterswertminderung). Für Eigenheime.'},
-  {lf:'LF11',t:'Liegenschaftszinssatz',d:'Zinssatz für Kapitalisierung der Liegenschaft – gibt Renditeerwartung des Marktes an. Ermittlung durch Gutachterausschuss aus Kaufpreisen. In MV: typisch 3–5% für Wohngrundstücke.'},
-  // LF12
-  {lf:'LF12',t:'Verkehrswert (§194 BauGB)',d:'<strong>Marktwert</strong> = Preis, der im gewöhnlichen Geschäftsverkehr zum Bewertungsstichtag zu erzielen wäre. Unabhängig von persönlichen oder ungewöhnlichen Verhältnissen.'},
-  {lf:'LF12',t:'Gutachterausschuss',d:'Unabhängiges Gremium aus Sachverständigen. Aufgaben: Kaufpreissammlung, Bodenrichtwerte, Marktberichte, Verkehrswertgutachten. In MV: Gutachterausschüsse bei Katasterbehörden.'},
-  {lf:'LF12',t:'BORIS.MV',d:'<strong>BOdenRIchtwertInformationssystem</strong> Mecklenburg-Vorpommern – öffentliches Portal für Bodenrichtwerte. Betrieben durch LAiV M-V und Gutachterausschüsse.'},
-  {lf:'LF12',t:'NHK 2010',d:'Normalherstellungskosten 2010 – Kostenkennwerte für Gebäudetypen als Basis des Sachwertverfahrens. Werden durch Indexreihen auf Bewertungsstichtag umgerechnet.'},
-  {lf:'LF12',t:'Alterswertminderung',d:'Wertminderung eines Gebäudes durch Alter und Abnutzung. Lineare Abschreibung: A = Alter / Gesamtnutzungsdauer. Restnutzungsdauer = GND − wirtschaftliches Alter.'},
-  // LF13
-  {lf:'LF13',t:'Trigonometrische Höhenmessung',d:'Höhenübertragung mit Totalstation: <strong>Δh = s·cos(z) + i − r</strong>. s = Schrägdistanz, z = Zenitwinkel, i = Instrumentenhöhe, r = Zielhöhe. Präziser als Nivellement über große Strecken.'},
-  {lf:'LF13',t:'Zenitwinkel',d:'Vertikalwinkel vom Zenit gemessen. z = 100 gon = horizontal. z < 100 gon = aufwärts. z > 100 gon = abwärts. Probe Zwei-Lagen: z_I + z_II = 400 gon.'},
-  {lf:'LF13',t:'Probe Zwei-Lagen-Messung',d:'z_I + z_II = 400 gon (bei fehlerfreier Messung). Horizontaldistanz: <strong>d = s·sin(z)</strong>. Höhenunterschied: Δh = d·cot(z) + i − r.'},
-  {lf:'LF13',t:'Instrumentenhöhe (i)',d:'Höhe vom Boden bis zur Kippachse der Totalstation. Gemessen mit Maßband. Typisch: 1,50–1,65 m. Geht in Tachymetrie-Formel ein: Δh = s·cos(z) + i − r.'},
-  {lf:'LF13',t:'Zielhöhe (r)',d:'Höhe vom Boden bis Reflektormittelpunkt (Prisma). Typisch: 1,50 m (Normalstab). Bei Kurzstab: 1,00 m. Wichtig: i und r müssen in gleicher Einheit und Bezugsebene sein.'},
+  // LF1 – Grundlagen
+  {lf:'LF1',pb:'Pb4',t:'BBiG',d:'<strong>Berufsbildungsgesetz</strong> – zentrale Rechtsgrundlage der dualen Berufsausbildung. Regelt Ausbildungsvertrag (§10), Pflichten Azubi/Betrieb (§13/§14), Probezeit (§20), Kündigung (§22), Zulassung zur Prüfung (§43).'},
+  {lf:'LF1',pb:'Pb4',t:'Probezeit (BBiG §20)',d:'Mindestens <strong>1 Monat</strong>, höchstens <strong>4 Monate</strong>. In dieser Zeit: beidseitige Kündigung ohne Frist und ohne Grund möglich.'},
+  {lf:'LF1',pb:'Pb4',t:'JArbSchG',d:'Jugendarbeitsschutzgesetz – gilt bis 18 Jahre. Max. <strong>8h/Tag, 40h/Woche</strong>. Pause ab 4,5h: 30 min; ab 6h: 60 min. Nachtruhe 20–6 Uhr. Mindesturlaub: 25 Werktage (< 16 J.) / 20 Werktage (16–17 J.).'},
+  {lf:'LF1',pb:'Pb4',t:'ArbZG (Erwachsene)',d:'Max. 8h/Tag, verlängerbar auf 10h wenn 6-Monatsdurchschnitt ≤ 8h. Pause ab 6h: 30 min; ab 9h: 45 min. Ruhezeit zwischen Arbeitstagen: mind. <strong>11 Stunden</strong>.'},
+  {lf:'LF1',pb:'Pb4',t:'ÖbVI',d:'<strong>Öffentlich bestellter Vermessungsingenieur</strong> – Freiberufler mit hoheitlichen Befugnissen durch Beleihung. Führt Grenzfeststellungen, Gebäudeeinmessungen, Flurstücksteilungen durch. Untersteht Fachaufsicht des LAiV M-V.'},
+  {lf:'LF1',pb:'Pb4',t:'LAiV M-V',d:'Landesamt für innere Verwaltung MV – zuständig für Landesvermessung, ALKIS, ATKIS, SAPOS-Betrieb, Fachaufsicht Katasterbehörden und ÖbVI, Prüfungszuständigkeit (VMT-Abschlussprüfung).'},
+  {lf:'LF1',pb:'Pb4',t:'Beleihung',d:'Übertragung hoheitlicher Aufgaben des Staates auf einen privaten Unternehmer (ÖbVI). Der ÖbVI handelt im eigenen Namen, aber mit staatlicher Autorität. Er ist kein Beamter.'},
+  {lf:'LF1',pb:'Pb4',t:'GUV – Alleinfinanzierung',d:'Gesetzliche Unfallversicherung (GUV) ist der einzige Sozialversicherungszweig, der zu <strong>100% vom Arbeitgeber</strong> getragen wird. Leistungen: Heilbehandlung, Verletztenrente, Rehabilitation nach Arbeitsunfall.'},
+  {lf:'LF1',pb:'Pb4',t:'Sozialversicherung – 5 Säulen',d:'GKV (Kranken), GRV (Renten), SPV (Pflege), ALV (Arbeitslosen), GUV (Unfall). Alle außer GUV: je ~50% AG/AN. GUV: 100% AG.'},
+  {lf:'LF1',pb:'Pb4',t:'GeoVermG M-V §14',d:'<strong>Gebäudeeinmessungspflicht</strong> des Eigentümers: Neu errichtete Gebäude müssen auf eigene Kosten vermessen und ins Liegenschaftskataster eingetragen werden.'},
+  // LF2 – Geodätische Grundlagen
+  {lf:'LF2',pb:'Pb2',t:'Geoid',d:'<strong>Physikalische Erdfigur</strong> – Äquipotentialfläche des Erdschwerefelds, die mit dem mittleren Meeresspiegel übereinstimmt. Basis für Höhenmessungen (NHN). Mathematisch unregelmäßig, daher für Berechnungen ungeeignet.'},
+  {lf:'LF2',pb:'Pb2',t:'NHN / DHHN2016',d:'<strong>Normalhöhennull</strong> – amtliches deutsches Höhenbezugssystem. Bezugspegel: Amsterdam (NAP). Vorgänger DHHN92 hat in MV Differenzen von typisch 1–4 cm. Alle amtlichen Höhen in MV beziehen sich auf NHN im DHHN2016.'},
+  {lf:'LF2',pb:'Pb2',t:'GRS80 Ellipsoid',d:'Geodetic Reference System 1980 – Rotationsellipsoid für ETRS89. Große Halbachse: <strong>a = 6 378 137,000 m</strong>, Abplattung 1/f = 298,257. Nahezu identisch mit WGS84 (Unterschied < 0,1 m).'},
+  {lf:'LF2',pb:'Pb2',t:'ETRS89',d:'European Terrestrial Reference System 1989 – europäisches geocentrisches Lagebezugssystem, an eurasische Platte gebunden. Ellipsoid: GRS80. Koordinaten zeitstabil (kein Plattendrift in Europa). Basis für UTM.'},
+  {lf:'LF2',pb:'Pb2',t:'UTM Zone 33N',d:'Universal Transverse Mercator – Streifenbreite 6°, Maßstabsfaktor m₀=0,9996. Zone 33N: Mittelmeridian 15°E, EPSG:<strong>25833</strong>. Empfehlung LAiV M-V für das gesamte MV-Landesgebiet.'},
+  {lf:'LF2',pb:'Pb2',t:'Geoidundulation N',d:'<strong>H_NHN = h_ellipsoidisch − N</strong>. N = Abstand Geoid über Ellipsoid. In MV: N ≈ 35–47 m (Modell GCG2016). GNSS misst ellipsoidische Höhe h, Geoidmodell rechnet auf H_NHN um.'},
+  {lf:'LF2',pb:'Pb2',t:'SAPOS® HEPS',d:'Hochpräzisions-EPS: <strong>1–3 cm Lage, 2–5 cm Höhe</strong>. RTK-Verfahren (Real Time Kinematic). Anwendung: Katastervermessung, Absteckung. Betrieb durch LAiV M-V.'},
+  {lf:'LF2',pb:'Pb2',t:'Multipath / DOP',d:'Multipath: Signalreflexion an Gebäuden/Bäumen → Positionsfehler. DOP (Dilution of Precision): Satellitengeometrie. <strong>PDOP < 3</strong> anstreben. Beide mindern GNSS-Genauigkeit.'},
+  {lf:'LF2',pb:'Pb2',t:'Gauß-Krüger vs. UTM',d:'GK: 3°-Streifen, m₀=1,0. UTM: 6°-Streifen, m₀=0,9996. GK-Rechtswert: Streifennr.×10⁶+500 000. UTM-Rechtswert: nur 500 000 m (ohne Zonenkennung). Umstieg in D abgeschlossen.'},
+  // LF3 – Höhenmessung & Nivellement
+  {lf:'LF3',pb:'Pb2',t:'Gon (Neugrad)',d:'Winkeleinheit in der deutschen Vermessung. Vollkreis = <strong>400 gon</strong>. Viertelkreis = 100 gon. Umrechnung: gon = ° × 10/9. Beispiele: 90°=100 gon, 180°=200 gon, 360°=400 gon.'},
+  {lf:'LF3',pb:'Pb2',t:'Δh = R − V',d:'Grundformel Nivellement: <strong>Rückblick minus Vorblick</strong>. Instrumentenhorizont: IH = H_A + R. Höhe Neupunkt: H_B = IH − V = H_A + R − V.'},
+  {lf:'LF3',pb:'Pb2',t:'Goldene Regel Nivellement',d:'<strong>Rückblick = Vorblickweite!</strong> Eliminiert Zielachsenfehler (i-Winkel), Erdkrümmungs- und Refraktionseinflüsse. Maximal ±2 m Differenz, ideal 20–50 m Zielweite.'},
+  {lf:'LF3',pb:'Pb2',t:'Schlussfehler Nivellement',d:'f_h = Σ(R−V) − (H_Ende − H_Anfang). Toleranz Feinnivellement: <strong>±3 mm × √L[km]</strong>. Technisches Niv.: <strong>±10 mm × √L[km]</strong>.'},
+  {lf:'LF3',pb:'Pb2',t:'Totalstation (EDM)',d:'Universalinstrument: Theodolit + EDM. Misst Horizontalwinkel Hz (0–400 gon), Zenitwinkel V (0–400 gon), Schrägdistanz SD. Genauigkeit: typisch 1–2 mm + 2 ppm. EDM-Prinzip: Laufzeitmessung Infrarot-/Laserimpuls.'},
+  {lf:'LF3',pb:'Pb2',t:'Richtungswinkel-Quadrantenregel',d:'t = arctan(ΔY/ΔX). Quadranten: I(ΔX>0,ΔY≥0): t=arctan; II(ΔX<0): t=arctan+200; III(ΔX<0,ΔY<0): t=arctan+200; IV(ΔX>0,ΔY<0): t=arctan+400.'},
+  {lf:'LF3',pb:'Pb2',t:'Zwei-Lagen-Messung',d:'Messung in Lage I + Lage II (Fernrohr um 200 gon gedreht). Mittelwert eliminiert: Zielachsenfehler c, Kippachsenfehler i, Kollimationsfehler. Probe: z_I + z_II = 400 gon.'},
+  {lf:'LF3',pb:'Pb2',t:'Freie Stationierung',d:'Standpunkt nicht auf Festpunkt. Koordinaten aus Messungen zu ≥2 Festpunkten (Richtung + Distanz). Vorteil: freie Standpunktwahl. Methode: Helmert-Transformation.'},
+  // LF4 – Lagemessung & Koordinatenberechnung
+  {lf:'LF4',pb:'Pb2',t:'Vorwärtsschnitt',d:'Koordinaten eines <strong>nicht zugänglichen</strong> Punktes P aus Richtungen von ≥2 Standpunkten A, B. Winkel α (bei A) und β (bei B) gemessen. Mindestens 3 Punkte zur Kontrolle.'},
+  {lf:'LF4',pb:'Pb2',t:'Rückwärtsschnitt (Resektion)',d:'Eigenen <strong>unbekannten</strong> Standpunkt P aus Richtungen zu ≥3 bekannten Festpunkten. Gefährlicher Ort (Pothenot-Kreis): P auf Umkreis von A,B,C → Resektion unbestimmt!'},
+  {lf:'LF4',pb:'Pb2',t:'Bogenschnitt',d:'Neupunkt P aus Strecken s_AP und s_BP. Hilfswinkel: cos(ε) = (s_AB² + s_AP² − s_BP²) / (2 × s_AB × s_AP). Zwei geometrische Lösungen → Plausibilitätsprüfung erforderlich.'},
+  {lf:'LF4',pb:'Pb2',t:'Polygonzug – Winkelabschluss',d:'Soll-Winkelsumme: Σβ_soll = (n+1) × 200 gon (n = Brechungswinkel). Winkelfehler: f_w = Σβ_gem − Σβ_soll. Toleranz: f_w,zul = ±30\'\'\' × √n.'},
+  {lf:'LF4',pb:'Pb2',t:'Helmert-Transformation (2D)',d:'4 Parameter: 2 Translationen (y₀, x₀), 1 Rotation (ε), 1 Maßstab (m). Eigenschaften bleiben erhalten: Winkel, Form (konform). Mindestens 2 identische Passpunkte nötig.'},
+  {lf:'LF4',pb:'Pb2',t:'MKQ – Methode kleinste Quadrate',d:'Ausgleichungsrechnung: Σv² → minimum (v = Verbesserungen). Liefert wahrscheinlichsten Schätzwert und Standardabweichung. Redundanz R = n − u (Beobachtungen minus Unbekannte).'},
+  // LF5 – ALKIS & Liegenschaftskataster
+  {lf:'LF5',pb:'Pb2',t:'ALKIS',d:'<strong>Amtliches Liegenschaftskatasterinformationssystem</strong> – löste ALK (Grafik) + ALB (Attribute) ab. Enthält Flurstücke, Gebäude, Nutzungsarten, Eigentümer. Daten in NAS (XML/GML). Basis: AAA-Datenmodell.'},
+  {lf:'LF5',pb:'Pb2',t:'Flurstück vs. Grundstück',d:'Flurstück: kleinste Einheit des Katasters. Grundstück: mindestens ein Flurstück, das im Grundbuch eingetragen ist. Ein Grundstück kann mehrere Flurstücke umfassen.'},
+  {lf:'LF5',pb:'Pb2',t:'Zerlegung',d:'Aufteilen eines Flurstücks in ≥2 neue. Ablauf: Antrag → Vermessung → Grenzfeststellung → Grenzniederschrift → ALKIS-Fortführung → Grundbuchfortführung. Ergebnis: neue Flurstücksnummern.'},
+  {lf:'LF5',pb:'Pb2',t:'Übereinstimmungsgebot',d:'Grundbuch und Liegenschaftskataster müssen in den Grenzen übereinstimmen. Bei Widerspruch: Antrag auf Berichtigung. ALKIS (Kataster) ist die technische Grundlage, Grundbuch (Amtsgericht) die Rechtslage.'},
+  {lf:'LF5',pb:'Pb2',t:'Gebäudeeinmessungspflicht',d:'§14 GeoVermG M-V: Eigentümer müssen neu errichtete Gebäude auf eigene Kosten einmessen lassen. Frist: üblicherweise 3–6 Monate nach Fertigstellung. Durchführung: ÖbVI oder Katasterbehörde.'},
+  // LF6 – Bauleitplanung I
+  {lf:'LF6',pb:'Pb3',t:'FNP vs. B-Plan',d:'FNP (Flächennutzungsplan): vorbereitend, gesamtes Gemeindegebiet, M 1:5000–1:50000, nicht direkt rechtverbindlich. B-Plan (Bebauungsplan): verbindlich, Satzung, Einzelgrundstück, aus FNP entwickelt.'},
+  {lf:'LF6',pb:'Pb3',t:'GRZ',d:'<strong>Grundflächenzahl</strong>: max. überbaubare Grundstücksfläche. GRZ 0,4 = max. 40% bebaubar. Überschreitung: bis 50% mehr für Nebenanlagen (Garagen, Wege) → GRZ × 1,5 max.'},
+  {lf:'LF6',pb:'Pb3',t:'GFZ',d:'<strong>Geschossflächenzahl</strong>: Summe aller Geschossflächen / Grundstücksfläche. GFZ 0,8 = max. 80% Geschossfläche je m² Grundstück. BMZ = Baumassenzahl (Kubikmeter Baumasse je m² Grundstück).'},
+  {lf:'LF6',pb:'Pb3',t:'Umlegung',d:'Bodenordnungsverfahren §45ff BauGB: Tausch unzweckmäßig geformter Grundstücke gegen erschlossene Baugrundstücke. Einwurfsmasse (alle Grundstücke) → abzüglich Erschließungsflächen = Verteilungsmasse.'},
+  {lf:'LF6',pb:'Pb3',t:'BauNVO – Gebietstypen',d:'WR=reines Wohnen, WA=allg. Wohnen (kein störendes Gewerbe), MI=Mischgebiet (Wohnen+Gewerbe gleichwertig), GE=Gewerbe, GI=Industrie, SO=Sondergebiet.'},
+  // LF7 – Ingenieurvermessung
+  {lf:'LF7',pb:'Pb3',t:'Grobabsteckung',d:'Erste Phase: Lage des Bauwerks ±20–50 cm. Schnelle Orientierung mit Totalstation oder GNSS. Ergebnis: Eckpfähle des Gebäudes.'},
+  {lf:'LF7',pb:'Pb3',t:'Feinabsteckung + Schnurgerüst',d:'Zweite Phase: ±5–10 mm. Holzpfähle + Schnurbretter außerhalb der Baugrube. Schnüre definieren exakte Mauerwerksachsen. Grundlage für Ausschachtung.'},
+  {lf:'LF7',pb:'Pb3',t:'Meterriss',d:'Horizontale Markierung genau <strong>1,000 m über OKFF</strong> (Oberkante Fertigfußboden) mit bekannter NHN-Höhe. Übertragung per Nivellement. Basis für alle Höhenmaße auf Baustelle.'},
+  {lf:'LF7',pb:'Pb3',t:'Monitoring',d:'Bauwerksüberwachung: Nullmessung → Folgemessungen. <strong>Deformationsvektor</strong> = Differenz. Referenzpunkte außerhalb Gefahrenzone, Objektpunkte am Bauwerk. Methode: Präzisionsnivellement, Totalstation.'},
+  {lf:'LF7',pb:'Pb3',t:'DIN 18710',d:'Norm für Ingenieurvermessungen: regelt Genauigkeitsstufen, Dokumentationspflichten, Absteckungsaufgaben. Toleranzen für Lage und Höhe je nach Aufgabentyp.'},
+  // LF8 – Topographie & Kartographie
+  {lf:'LF8',pb:'Pb3',t:'LiDAR / ALS',d:'Airborne Laser Scanning – aus Flugzeug. Liefert dichte Punktwolke. 1. Rückgabe = Geländeoberfläche (ohne Vegetation) → <strong>DGM</strong>. Letzte Rückgabe = alles inkl. Vegetation → DOM.'},
+  {lf:'LF8',pb:'Pb3',t:'DGM vs. DOM vs. nDOM',d:'DGM = nur Erdoberfläche. DOM = mit Gebäuden/Bäumen (Oberfläche). nDOM = normiertes DOM = DOM − DGM = zeigt Objekthöhen über Gelände (Gebäude, Bäume).'},
+  {lf:'LF8',pb:'Pb3',t:'TIN & Bruchkanten',d:'TIN (Triangulated Irregular Network): Geländemodell aus Dreiecken. <strong>Bruchkanten</strong> (Böschungsoberkanten, Gewässerufer) werden als harte Kanten zwingend integriert, sonst werden Geländesprünge geglättet.'},
+  {lf:'LF8',pb:'Pb3',t:'Kartenlayout-Pflichtinhalt',d:'Mindestens: Karteninhalt, <strong>Nordpfeil</strong>, <strong>Maßstab</strong> (grafisch + numerisch), <strong>Legende</strong>, <strong>Blattrahmen</strong> mit Koordinatennetz. Optional: Titel, Datum, Kartenherausgeber.'},
+  {lf:'LF8',pb:'Pb3',t:'Isohypse / Äquidistanz',d:'Isohypse = Höhenlinie (verbindet Punkte gleicher Höhe). Äquidistanz = Höhenabstand zwischen zwei benachbarten Isohypsen. In DTK10 MV: 5 m Äquidistanz.'},
+  // LF9 – GIS & Geodaten
+  {lf:'LF9',pb:'Pb2',t:'WMS vs. WFS',d:'WMS (Web Map Service): Rasterkarte als Bild, nicht editierbar. WFS (Web Feature Service): Vektordaten als GML, Objekte abfragbar/editierbar. WMTS: gecachte Kacheln, sehr schnell.'},
+  {lf:'LF9',pb:'Pb2',t:'GDI-MV / GeoMV',d:'Geodateninfrastruktur MV – Landesportal für ALKIS, ATKIS, DGM, Orthofotos. Betrieben durch LAiV M-V. Zugang zu WMS, WFS, WMTS. Kostenlos für behördliche Nutzung.'},
+  {lf:'LF9',pb:'Pb2',t:'Topologie in GIS',d:'Räumliche Beziehungen: Adjacenz (benachbart), Inklusion (enthält), Überschneidung. GIS-Topologieregeln verhindern Lücken und Überlappungen in Flächengeometrien (z.B. ALKIS-Flurstücke).'},
+  {lf:'LF9',pb:'Pb2',t:'SQL in GIS',d:'SELECT * FROM flurstuecke WHERE flaeche_m2 > 5000 AND nutzungsart = \'Ackerland\'. PostGIS: ST_Area(), ST_Buffer(), ST_Intersects() für räumliche Abfragen.'},
+  {lf:'LF9',pb:'Pb2',t:'EPSG:25833',d:'Koordinatenreferenzsystem UTM Zone 33N (ETRS89). Empfehlung LAiV M-V für alle GIS-Projekte im Landesgebiet MV. Zone 32N (EPSG:25832) für westliches MV alternativ möglich.'},
+  // LF10 – Katasteroperationen
+  {lf:'LF10',pb:'Pb3',t:'Grenzfeststellung',d:'Rechtlich bindende Bestimmung der Grenzlage. Ergebnis: <strong>Grenzniederschrift</strong> mit Unterschriften aller Eigentümer. Durchführung: ÖbVI oder Katasterbehörde. Nach Feststellung: Abmarkung.'},
+  {lf:'LF10',pb:'Pb3',t:'Abmarkung',d:'Physische Kennzeichnung von Grenzpunkten durch Vermarkung (Grenzstein, Bolzen, Rohr). Pflicht nach Grenzfeststellung. Nichtdurchführung = Ordnungswidrigkeit.'},
+  {lf:'LF10',pb:'Pb3',t:'Grenzbegradigung',d:'Katasterverfahren: Flächenneutraler Grenzausgleich zwischen Nachbarn → gerade Grenzlinie. Beide Eigentümer tauschen gleich große Teilflächen. Ablauf wie Zerlegung + Fortführung.'},
+  {lf:'LF10',pb:'Pb3',t:'Grenzwiederherstellung',d:'Wiederherstellung einer früher festgestellten aber nicht mehr vermarkten Grenze. Berechnung aus Rissen und Feldbüchern. Kein neues Recht – nur Wiederherstellung des bestehenden.'},
+  // LF11 – GRZ/GFZ & 3D-Geoprodukte
+  {lf:'LF11',pb:'Pb3',t:'3D-Stadtmodell CityGML',d:'Offenes OGC-Datenformat für 3D-Stadtmodelle. LOD0–LOD4 (Level of Detail). LOD2 = Dachform. LOD3 = Fassadendetails. LAiV MV: 3D-Gebäudemodell in LOD2 verfügbar.'},
+  {lf:'LF11',pb:'Pb3',t:'TLS (Terrestrisches Laserscanning)',d:'Bodengebundenes Laserscanning. Punktwolke von fester Station. Reichweite: je nach Gerät 100–1000 m. Genauigkeit: 2–5 mm. Anwendung: Bauwerksaufnahme, Denkmalpflege, Monitoring.'},
+  {lf:'LF11',pb:'Pb3',t:'DOP20 (Orthofotos MV)',d:'Digitale Orthophotos, 20 cm Auflösung – amtliches Rasterbild für MV. Aus Luftbildbefliegung erzeugt. Metrik entzerrt. Kostenfrei für öffentliche Behörden via GDI-MV.'},
+  // LF12 – Grundstückswertermittlung
+  {lf:'LF12',pb:'Pb3',t:'Verkehrswert §194 BauGB',d:'<strong>Marktwert</strong> = Preis im gewöhnlichen Geschäftsverkehr zum Bewertungsstichtag. Unabhängig von: persönlichen Verhältnissen, ungewöhnlichen Umständen, Affektionswert.'},
+  {lf:'LF12',pb:'Pb3',t:'Vergleichswertverfahren',d:'Wert aus Kaufpreisen vergleichbarer Objekte. Direkteste Methode. Voraussetzung: ausreichend Vergleichspreise vorhanden. Gutachterausschuss führt Kaufpreissammlung.'},
+  {lf:'LF12',pb:'Pb3',t:'Ertragswertverfahren',d:'Für Renditeobjekte (Mietgebäude). V = Bodenwert + Gebäudeertragswert. Reinertrag × Vervielfältiger = Gebäudeertragswert. Liegenschaftszinssatz = marktübliche Renditeerwartung.'},
+  {lf:'LF12',pb:'Pb3',t:'Sachwertverfahren',d:'Für Eigenheime/Sonderobjekte. V = Bodenwert + Gebäudesachwert × Marktanpassungsfaktor. Gebäudesachwert = NHK 2010 × BGF × (1 − Alterswertminderung).'},
+  {lf:'LF12',pb:'Pb3',t:'Bodenrichtwert / BORIS.MV',d:'Durchschnittlicher Lagewert des Bodens je m². Ermittelt durch Gutachterausschuss aus Kaufpreissammlung. In MV abrufbar via <strong>BORIS.MV</strong> (öffentliches Portal).'},
+  {lf:'LF12',pb:'Pb3',t:'Gutachterausschuss',d:'Unabhängiges Sachverständigengremium. Aufgaben: Kaufpreissammlung, Bodenrichtwerte, Marktberichte, Verkehrswertgutachten. In MV: bei Landkreisen/kreisfreien Städten angesiedelt.'},
+  // LF13 – Trigonometrische Höhenmessung
+  {lf:'LF13',pb:'Pb1',t:'Tachymetrie Δh-Formel',d:'<strong>Δh = s·cos(z) + i − r</strong>. s = Schrägdistanz, z = Zenitwinkel [gon], i = Instrumentenhöhe, r = Zielhöhe. Oder: Δh = HD·cot(z) + i − r (über Horizontaldistanz).'},
+  {lf:'LF13',pb:'Pb1',t:'Zenitwinkel',d:'Vom Zenit gemessen: z=100 gon = horizontal, z<100 = aufwärts, z>100 = abwärts. Probe Zwei-Lagen: <strong>z_I + z_II = 400 gon</strong> (Vollkreis).'},
+  {lf:'LF13',pb:'Pb1',t:'Horizontaldistanz',d:'<strong>HD = s × sin(z)</strong>. z = Zenitwinkel in gon (Umrechnung: rad = gon × π/200). Bei z=100 gon: sin(100g) = 1 → HD = s. Bei Schrägdistanz 100 m, z=80 gon: HD = 100 × sin(80g).'},
+  {lf:'LF13',pb:'Pb1',t:'Polarkoordinaten → Rechteck',d:'ΔY = HD × sin(t_AP), ΔX = HD × cos(t_AP). Y_P = Y_Stand + ΔY, X_P = X_Stand + ΔX. t_AP = Richtungswinkel Standpunkt → Aufnahmepunkt.'},
 ];
 
+// ═════════════════════════ QUIZ DATA (100+ Fragen) ═════════════════════════
 const QUIZ_DATA = [
-  {lf:'LF1',q:'Bis zu wie viel Monate darf die Probezeit in einer Berufsausbildung maximal dauern?',opts:['2 Monate','4 Monate','6 Monate','3 Monate'],ans:1,exp:'§20 BBiG: Mindestens 1 Monat, höchstens 4 Monate. In dieser Zeit beidseitige Kündigung ohne Frist möglich.'},
-  {lf:'LF1',q:'Welcher Sozialversicherungszweig wird ausschließlich vom Arbeitgeber bezahlt?',opts:['Krankenversicherung','Rentenversicherung','Unfallversicherung','Arbeitslosenversicherung'],ans:2,exp:'Die gesetzliche Unfallversicherung (GUV) wird zu 100% vom Arbeitgeber getragen.'},
-  {lf:'LF1',q:'Was ist ein ÖbVI?',opts:['Beamter des LAiV','Öffentlich bestellter Vermessungsingenieur (Freiberufler mit Beleihung)','Mitarbeiter des Katasteramts','Gutachter für Grundstückswerte'],ans:1,exp:'ÖbVI = Öffentlich bestellter Vermessungsingenieur. Freiberufler mit hoheitlichen Befugnissen (Beleihung). Kein Beamter, aber staatliche Autorität.'},
-  {lf:'LF1',q:'Welches Gesetz regelt die Gebäudeeinmessungspflicht in Mecklenburg-Vorpommern?',opts:['BBiG','BauGB','GeoVermG M-V §14','JArbSchG'],ans:2,exp:'§14 GeoVermG M-V regelt die Gebäudeeinmessungspflicht des Eigentümers in MV.'},
-  {lf:'LF2',q:'Welcher Maßstabsfaktor gilt für die UTM-Projektion?',opts:['1,0000','0,9999','0,9996','1,0004'],ans:2,exp:'UTM: m₀ = 0,9996 (minimale Verzerrung am Mittelmeridian, anders als Gauß-Krüger mit m₀=1,0000).'},
-  {lf:'LF2',q:'Welches Ellipsoid liegt dem deutschen Koordinatensystem ETRS89 zugrunde?',opts:['Bessel 1841','WGS84','GRS80','Hayford'],ans:2,exp:'ETRS89 basiert auf dem GRS80-Ellipsoid. WGS84 ist nahezu identisch (Unterschied < 0,1 m), aber GRS80 ist korrekt für ETRS89.'},
-  {lf:'LF2',q:'Die Formel H_NHN = h_ellipsoidisch − N beschreibt was?',opts:['Polygonzugberechnung','Geoidundulation','Tachymetrie','Schlussfehler'],ans:1,exp:'N = Geoidundulation. h = ellipsoidische GNSS-Höhe. H_NHN = Normalhöhe über NHN. In MV: N ≈ 35–47 m (GCG2016).'},
-  {lf:'LF2',q:'Welcher SAPOS-Dienst wird für Katastervermessungen in MV verwendet?',opts:['EPS (0,5–3 m)','HEPS (1–3 cm)','GPPS (< 1 cm)','GPS Single-Point (5–10 m)'],ans:1,exp:'SAPOS HEPS (Hochpräzisions-EPS): 1–3 cm Lage, RTK-Verfahren. Standard für Katastervermessung und Absteckung.'},
-  {lf:'LF3',q:'Welcher Winkel entspricht 90° in Gon?',opts:['90 gon','100 gon','200 gon','360 gon'],ans:1,exp:'Vollkreis = 400 gon = 360°. Rechter Winkel = 400/4 = 100 gon. Umrechnung: gon = ° × 10/9.'},
-  {lf:'LF3',q:'Wie lautet die Grundformel des geometrischen Nivellements?',opts:['Δh = R + V','Δh = V − R','Δh = R − V','Δh = IH − R'],ans:2,exp:'Δh = R − V. R = Rückblick auf bekanntem Punkt. V = Vorblick auf unbekanntem Punkt. IH = H_A + R.'},
-  {lf:'LF3',q:'Was eliminiert die Einhaltung gleicher Rück- und Vorblickweiten beim Nivellement?',opts:['Grobe Fehler','Zielachsenfehler, Erdkrümmung und Refraktion','Multipath-Effekte','Ablesefehler'],ans:1,exp:'Goldene Regel: Gleiche Zielweiten eliminieren Zielachsenfehler (i-Winkel), Erdkrümmung und Refraktion vollständig.'},
-  {lf:'LF3',q:'Was ist der Zenitwinkel bei horizontaler Zielrichtung?',opts:['0 gon','50 gon','100 gon','200 gon'],ans:2,exp:'Zenitwinkel wird vom Zenit gemessen: 0 = senkrecht nach oben. 100 gon = horizontal. 200 gon = senkrecht nach unten.'},
-  {lf:'LF4',q:'Welches Verfahren bestimmt den eigenen unbekannten Standpunkt durch Richtungen zu ≥3 bekannten Punkten?',opts:['Vorwärtsschnitt','Bogenschnitt','Rückwärtsschnitt (Resektion)','Polygonzug'],ans:2,exp:'Rückwärtsschnitt (Resektion): Standpunkt P aus ≥3 Festpunkten. Achtung: gefährlicher Ort (Pothenot-Kreis)!'},
-  {lf:'LF4',q:'Was versteht man unter Redundanz in der Ausgleichungsrechnung?',opts:['Anzahl unbekannter Größen','Überschuss an Beobachtungen (n − u)','Standardabweichung der Messung','Anzahl der Standpunkte'],ans:1,exp:'Redundanz R = n (Beobachtungen) − u (Unbekannte). Hohe Redundanz ermöglicht bessere Fehlererkennung und Qualitätskontrolle.'},
-  {lf:'LF5',q:'Was bedeutet ALKIS?',opts:['Amtliches Liegenschaftskatasterinformationssystem','Allgemeines Liegenschaftskartensystem','Automatisiertes Landvermessungs- und Katastersystem','Amtliches Lageplan-Kataster-Informations-System'],ans:0,exp:'ALKIS = Amtliches Liegenschaftskatasterinformationssystem. Ablösung von ALK (Grafik) und ALB (Attribute). NAS-Format.'},
-  {lf:'LF5',q:'Was ist ein Flurstück?',opts:['Ein Grundbuchblatt','Eine Gemarkung','Die kleinste Einheit des Liegenschaftskatasters','Ein Bebauungsplangebiet'],ans:2,exp:'Flurstück = kleinste Einheit des Liegenschaftskatasters. Eindeutig durch: Gemarkung + Flur + Flurstücksnummer.'},
-  {lf:'LF6',q:'Was besagt die GRZ 0,4 in einem Bebauungsplan?',opts:['40% des Gebäudes muss grüne Fassade haben','Maximal 40% der Grundstücksfläche darf überbaut werden','Mindestens 40% Grünfläche erforderlich','Das Gebäude darf maximal 4 Stockwerke haben'],ans:1,exp:'GRZ = Grundflächenzahl: Verhältnis überbaubare Fläche zu Grundstücksfläche. GRZ 0,4 → max. 40% bebaubar.'},
-  {lf:'LF7',q:'Was ist ein Meterriss?',opts:['Eine 1 Meter lange Messlatte','Horizontale Markierung 1m über OKFF mit bekannter NHN-Höhe','Rissmarke im Gefüge','Maßstab 1:1.000'],ans:1,exp:'Meterriss: Horizontale Linie genau 1,000 m über Oberkante Fertigfußboden (OKFF). Höhe über NHN bekannt. Referenz für alle Baumaße.'},
-  {lf:'LF8',q:'Was ist der Unterschied zwischen DGM und DOM?',opts:['Kein Unterschied','DGM zeigt Geländeoberfläche ohne Objekte; DOM zeigt alle Objekte','DGM ist für Deutschland, DOM für Österreich','DGM hat 1m Auflösung, DOM 5m'],ans:1,exp:'DGM = nur Erdoberfläche (1. Rückgabe LiDAR). DOM = mit Gebäuden/Bäumen. nDOM = normiertes DOM (DOM − DGM) zeigt Objekthöhen.'},
-  {lf:'LF9',q:'Welcher OGC-Dienst liefert Vektordaten und erlaubt Objektabfragen?',opts:['WMS','WMTS','WFS','WCS'],ans:2,exp:'WFS (Web Feature Service) liefert Vektordaten (GML/GeoJSON). Einzelne Objekte abfragbar/editierbar. WMS nur Rasterbilder.'},
-  {lf:'LF11',q:'Welches Wertermittlungsverfahren eignet sich am besten für ein Mietwohnhaus?',opts:['Sachwertverfahren','Vergleichswertverfahren','Ertragswertverfahren','Liquidationswertverfahren'],ans:2,exp:'Ertragswertverfahren: Wert aus Ertragspotenzial (Mieteinnahmen). Für Renditeimmobilien und Mietwohnhäuser. V = Bodenwert + Reinertrag × Vervielfältiger.'},
-  {lf:'LF12',q:'Wer ermittelt Bodenrichtwerte in Deutschland?',opts:['Finanzamt','Grundbuchamt','Gutachterausschuss','Katasteramt'],ans:2,exp:'Gutachterausschuss – unabhängiges Gremium aus Sachverständigen. Führt Kaufpreissammlung und ermittelt Bodenrichtwerte. In MV: BORIS.MV Portal.'},
-  {lf:'LF13',q:'Wie lautet die Probe für eine Zwei-Lagen-Messung?',opts:['z_I = z_II','z_I − z_II = 200 gon','z_I + z_II = 400 gon','z_I × z_II = 10000'],ans:2,exp:'Probe: z_I + z_II = 400 gon. Lage I (z < 200 gon) + Lage II (z > 200 gon) = 400 gon (Vollkreis). Abweichung = Instrumentenfehler.'},
-  {lf:'LF13',q:'Wie berechnet man die Horizontaldistanz aus Schrägdistanz s und Zenitwinkel z?',opts:['HD = s × cos(z)','HD = s × sin(z)','HD = s / cos(z)','HD = s × tan(z)'],ans:1,exp:'HD = s × sin(z). Bei z=100 gon (horizontal): sin(100g) = 1, also HD = s. Bei z=50 gon: sin(50g) = sin(45°) = 0,707.'},
+  // LF1 – Grundlagen (Pb4)
+  {lf:'LF1',pb:'Pb4',q:'Wie lange darf die Probezeit in einer Berufsausbildung nach BBiG maximal dauern?',opts:['2 Monate','4 Monate','6 Monate','12 Monate'],ans:1,exp:'§20 BBiG: Mindestens 1 Monat, höchstens 4 Monate. In dieser Zeit beidseitige Kündigung ohne Frist möglich.'},
+  {lf:'LF1',pb:'Pb4',q:'Welcher Sozialversicherungszweig wird ausschließlich vom Arbeitgeber bezahlt?',opts:['Krankenversicherung (GKV)','Rentenversicherung (GRV)','Unfallversicherung (GUV)','Pflegeversicherung (SPV)'],ans:2,exp:'Die gesetzliche Unfallversicherung (GUV) wird zu 100% vom Arbeitgeber getragen – als einzige Säule des Sozialversicherungssystems.'},
+  {lf:'LF1',pb:'Pb4',q:'Was ist ein ÖbVI rechtlich betrachtet?',opts:['Beamter des Landes MV','Angestellter des LAiV','Freiberufler mit staatlicher Beleihung','Mitarbeiter des Katasteramts'],ans:2,exp:'ÖbVI = Öffentlich bestellter Vermessungsingenieur: Freiberufler, dem hoheitliche Befugnisse verliehen wurden (Beleihung). Kein Beamter, aber staatliche Autorität.'},
+  {lf:'LF1',pb:'Pb4',q:'Welches Gesetz regelt die Gebäudeeinmessungspflicht in MV?',opts:['BBiG §43','BauGB §35','GeoVermG M-V §14','JArbSchG §8'],ans:2,exp:'§14 GeoVermG M-V: Eigentümer müssen neu errichtete Gebäude auf eigene Kosten einmessen und im Liegenschaftskataster eintragen lassen.'},
+  {lf:'LF1',pb:'Pb4',q:'Bis zu welchem Alter gilt das Jugendarbeitsschutzgesetz?',opts:['Bis 16 Jahre','Bis 18 Jahre','Bis 21 Jahre','Bis 25 Jahre'],ans:1,exp:'JArbSchG gilt für alle Personen unter 18 Jahren. Maximal 8 Stunden täglich, 40 Stunden pro Woche.'},
+  {lf:'LF1',pb:'Pb4',q:'Welche Ruhepause schreibt das JArbSchG bei 6 Stunden Arbeitszeit vor?',opts:['15 Minuten','30 Minuten','60 Minuten','45 Minuten'],ans:2,exp:'Ab 4,5h: 30 min Pause. Ab 6h: 60 min Pause (JArbSchG). Im Vergleich: ArbZG (Erwachsene) ab 6h nur 30 min.'},
+  {lf:'LF1',pb:'Pb4',q:'Welche Behörde ist in MV für die Fachaufsicht über ÖbVI zuständig?',opts:['IHK Schwerin','Katasteramt Rostock','LAiV M-V','Innenministerium MV'],ans:2,exp:'Das LAiV M-V (Landesamt für innere Verwaltung) führt die Fachaufsicht über ÖbVI und Katasterbehörden in MV.'},
+  {lf:'LF1',pb:'Pb4',q:'Wie viele Säulen hat das deutsche Sozialversicherungssystem?',opts:['3','4','5','6'],ans:2,exp:'5 Säulen: GKV (Kranken), GRV (Renten), SPV (Pflege), ALV (Arbeitslosen), GUV (Unfall).'},
+  {lf:'LF1',pb:'Pb4',q:'Wann kann ein Ausbildender nach der Probezeit kündigen?',opts:['Jederzeit mit 4-Wochen-Frist','Nur aus wichtigem Grund, fristlos und schriftlich','Mit 3-Monats-Frist','Nur zum Quartalsende'],ans:1,exp:'§22 BBiG: Nach Probezeit kann der Ausbildende nur aus wichtigem Grund kündigen – fristlos und schriftlich. Die/Der Auszubildende kann mit 4-Wochen-Frist bei Berufsaufgabe kündigen.'},
+  // LF2 – Geodätische Grundlagen (Pb2)
+  {lf:'LF2',pb:'Pb2',q:'Welcher Maßstabsfaktor gilt für die UTM-Projektion am Mittelmeridian?',opts:['1,0000','0,9996','1,0004','0,9999'],ans:1,exp:'UTM: m₀ = 0,9996 – minimale Verzerrung am Mittelmeridian. Anders als Gauß-Krüger mit m₀=1,0000 (verzerrungsfrei am MM).'},
+  {lf:'LF2',pb:'Pb2',q:'Welches Ellipsoid liegt dem deutschen Koordinatensystem ETRS89 zugrunde?',opts:['Bessel 1841','WGS84','GRS80','Hayford/International'],ans:2,exp:'ETRS89 basiert auf dem GRS80-Ellipsoid. WGS84 ist nahezu identisch (Unterschied < 0,1 m), aber GRS80 ist korrekt für ETRS89.'},
+  {lf:'LF2',pb:'Pb2',q:'Was beschreibt die Formel H_NHN = h_ellipsoidisch − N?',opts:['Polygonzugberechnung','Geoidundulation zur NHN-Höhenermittlung','Tachymetrie','Schlussfehler Nivellement'],ans:1,exp:'N = Geoidundulation (Abstand Geoid über Ellipsoid). h = GNSS-Höhe. H_NHN = Normalhöhe. In MV: N ≈ 35–47 m (GCG2016).'},
+  {lf:'LF2',pb:'Pb2',q:'Welcher SAPOS-Dienst ist für Katastervermessungen in MV einschlägig?',opts:['EPS (0,5–3 m)','HEPS (1–3 cm)','GPPS (< 1 cm)','GPS Single-Point (5–10 m)'],ans:1,exp:'SAPOS HEPS (Hochpräzisions-EPS): 1–3 cm Lage, RTK-Verfahren. Standard für Katastervermessung und Absteckung in MV.'},
+  {lf:'LF2',pb:'Pb2',q:'Welcher EPSG-Code gilt für UTM Zone 33N (ETRS89)?',opts:['EPSG:4326','EPSG:25832','EPSG:25833','EPSG:32633'],ans:2,exp:'EPSG:25833 = ETRS89 / UTM Zone 33N. Empfehlung des LAiV M-V für alle GIS-Projekte im gesamten Landesgebiet MV.'},
+  {lf:'LF2',pb:'Pb2',q:'Wie groß ist die Streifenbreite einer UTM-Zone?',opts:['3°','6°','9°','12°'],ans:1,exp:'UTM: 6° Streifenbreite (60 Zonen weltweit). Gauß-Krüger: 3° Streifenbreite (engere Streifen, weniger Verzerrung).'},
+  {lf:'LF2',pb:'Pb2',q:'Was versteht man unter Multipath bei GNSS?',opts:['Verwendung mehrerer Satellitensysteme gleichzeitig','Signalreflexionen an Gebäuden/Bäumen → Positionsfehler','Mehrfachmessungen zur Genauigkeitssteigerung','Datenübertragung über mehrere Kanäle'],ans:1,exp:'Multipath = Signalreflexionen an Gebäuden oder Vegetation. Das reflektierte Signal kommt auf einem längeren Weg an → täuscht falsche Entfernung vor → Positionsfehler.'},
+  {lf:'LF2',pb:'Pb2',q:'Was ist das Geoid?',opts:['Das mathematische Ellipsoid der Erde','Die Äquipotentialfläche des Erdschwerefelds auf Meereshöhe','Das digitale Geländemodell','Die Kartenprojektionsfläche'],ans:1,exp:'Das Geoid ist die physikalische Erdfigur: Äquipotentialfläche des Erdschwerefelds, die dem mittleren Meeresspiegel entspricht. Basis für Höhenmessungen (NHN).'},
+  // LF3 – Höhenmessung & Nivellement (Pb2)
+  {lf:'LF3',pb:'Pb2',q:'Welchem Winkel in Grad entspricht 100 gon?',opts:['45°','90°','180°','100°'],ans:1,exp:'Vollkreis = 400 gon = 360°. 100 gon = 90° (rechter Winkel). Umrechnung: ° = gon × 9/10.'},
+  {lf:'LF3',pb:'Pb2',q:'Wie lautet die Grundformel des geometrischen Nivellements?',opts:['Δh = R + V','Δh = V − R','Δh = R − V','Δh = IH + V'],ans:2,exp:'Δh = R − V. R = Rückblick auf bekanntem Punkt (erhöht IH). V = Vorblick auf Neupunkt (ergibt seine Höhe).'},
+  {lf:'LF3',pb:'Pb2',q:'Was eliminiert die Einhaltung gleicher Rück- und Vorblickweiten beim Nivellement?',opts:['Grobe Fehler','Zielachsenfehler, Erdkrümmung und Refraktion','Multipath-Effekte','Ablesefehler'],ans:1,exp:'Goldene Regel: Gleiche Zielweiten eliminieren Zielachsenfehler (i-Winkel), Erdkrümmungseinfluss und Refraktion vollständig.'},
+  {lf:'LF3',pb:'Pb2',q:'Was ist der Zenitwinkel bei horizontaler Zielrichtung?',opts:['0 gon','50 gon','100 gon','200 gon'],ans:2,exp:'Zenitwinkel vom Zenit gemessen: 0 = senkrecht nach oben, 100 gon = horizontal, 200 gon = senkrecht nach unten.'},
+  {lf:'LF3',pb:'Pb2',q:'Welche Toleranz gilt für das Technische Nivellement?',opts:['±1 mm × √L','±3 mm × √L','±10 mm × √L','±30 mm × √L'],ans:2,exp:'Technisches Nivellement: f_h,zul = ±10 mm × √L[km]. Feinnivellement: ±3 mm × √L. L = Streckenlänge in km.'},
+  {lf:'LF3',pb:'Pb2',q:'Was wird beim geometrischen Nivellement als "Instrumentenhorizont" bezeichnet?',opts:['Höhe des Instruments über Boden','Visierline des Nivelliers über NHN (H_A + R)','Zenitwinkel der Ziellinie','Horizontalkreisablesung'],ans:1,exp:'IH = H_A + R. Der Instrumentenhorizont ist die Höhe der Visierlinie über NHN. Davon werden die Vorblicke abgezogen: H_B = IH − V.'},
+  {lf:'LF3',pb:'Pb2',q:'Was misst eine Totalstation NICHT direkt?',opts:['Horizontalwinkel','Zenitwinkel','Schrägdistanz','Koordinaten'],ans:3,exp:'Die Totalstation misst direkt: Horizontalwinkel (Hz), Zenitwinkel (V), Schrägdistanz (SD). Koordinaten werden erst rechnerisch aus diesen Messgrößen abgeleitet.'},
+  {lf:'LF3',pb:'Pb2',q:'Richtungswinkel von A(Y=500,X=500) nach B(Y=600,X=450) – in welchem Quadranten liegt er?',opts:['I (0–100 gon)','II (100–200 gon)','III (200–300 gon)','IV (300–400 gon)'],ans:1,exp:'ΔY = 600−500 = +100 (positiv), ΔX = 450−500 = −50 (negativ). ΔX<0 → Quadrant II. t = arctan(100/−50)+200 gon ≈ 136,7 gon.'},
+  // LF4 – Lagemessung & Koordinaten (Pb2)
+  {lf:'LF4',pb:'Pb2',q:'Welches Verfahren bestimmt den eigenen Standpunkt durch Richtungen zu ≥3 Festpunkten?',opts:['Vorwärtsschnitt','Bogenschnitt','Rückwärtsschnitt (Resektion)','Polygonzug'],ans:2,exp:'Rückwärtsschnitt (Resektion): Standpunkt P aus Richtungen zu ≥3 Festpunkten A,B,C. Gefährlicher Ort: P auf dem Umkreis aller drei Punkte → Lösung unbestimmt.'},
+  {lf:'LF4',pb:'Pb2',q:'Was ist die Redundanz in der Ausgleichungsrechnung?',opts:['Anzahl Unbekannter','Überschuss der Beobachtungen (n − u)','Standardabweichung','Anzahl Standpunkte'],ans:1,exp:'Redundanz R = n − u (Beobachtungen minus Unbekannte). Hohe Redundanz = bessere Fehlererkennung und Qualitätskontrolle.'},
+  {lf:'LF4',pb:'Pb2',q:'Wie viele Parameter hat eine 2D-Helmert-Transformation?',opts:['2','3','4','6'],ans:2,exp:'4 Parameter: 2 Translationen (y₀, x₀), 1 Rotation (ε), 1 Maßstab (m). Mindestens 2 identische Passpunkte erforderlich.'},
+  {lf:'LF4',pb:'Pb2',q:'Was ist der "Gefährliche Ort" beim Rückwärtsschnitt?',opts:['Punkt mit schlechter Sicht','Punkt auf dem Umkreis der drei Festpunkte','Punkt zu nahe an der Straße','Punkt in einer Senke'],ans:1,exp:'Wenn P auf dem Umkreis von A, B, C liegt, ist die Resektion geometrisch unbestimmt. Erkennungstest: cos(α+α\') = const. Lösung: anderen Standpunkt oder anderen 3. Festpunkt wählen.'},
+  {lf:'LF4',pb:'Pb2',q:'Welche Winkelsumme soll ein beidseitig angeschlossener Polygonzug mit n Brechungswinkeln haben?',opts:['n × 200 gon','(n+1) × 200 gon','n × 400 gon','(n−1) × 200 gon'],ans:1,exp:'Σβ_soll = (n+1) × 200 gon, wobei n = Anzahl der Brechungswinkel (Innenpunkte). Bei 3 Brechungswinkeln: 4 × 200 = 800 gon.'},
+  {lf:'LF4',pb:'Pb2',q:'Was bleibt bei einer Helmert-Transformation erhalten?',opts:['Abstände und Winkel (konform)','Nur Winkel','Nur Abstände','Flächen'],ans:0,exp:'Die Helmert-Transformation (auch: konforme Transformation) erhält Winkel und Formen. Abstände ändern sich durch den Maßstabsfaktor, aber Winkelbeziehungen bleiben gleich.'},
+  // LF5 – ALKIS & Kataster (Pb2)
+  {lf:'LF5',pb:'Pb2',q:'Was bedeutet ALKIS?',opts:['Amtliches Liegenschaftskatasterinformationssystem','Allgemeines Liegenschaftskartensystem','Automatisches Landeskatasterverwaltungs-Informationssystem','Amtliches Lage- und Kataster-Informationssystem'],ans:0,exp:'ALKIS = Amtliches Liegenschaftskatasterinformationssystem. Ablösung von ALK (Automatisierte Liegenschaftskarte) und ALB (Automatisiertes Liegenschaftsbuch).'},
+  {lf:'LF5',pb:'Pb2',q:'Was ist ein Flurstück?',opts:['Ein Grundbuchblatt','Eine Gemarkung','Kleinste Einheit des Liegenschaftskatasters','Ein Bebauungsplangebiet'],ans:2,exp:'Flurstück = kleinste Einheit des Liegenschaftskatasters. Eindeutige Bezeichnung durch: Gemarkung + Flur + Flurstücksnummer.'},
+  {lf:'LF5',pb:'Pb2',q:'Was regelt das Übereinstimmungsgebot?',opts:['Grundbuch und Kataster müssen in den Grenzen übereinstimmen','B-Plan und FNP müssen übereinstimmen','SAPOS und Totalstation müssen übereinstimmen','UTM und GK müssen übereinstimmen'],ans:0,exp:'Das Übereinstimmungsgebot: Grundbuch (Recht) und Liegenschaftskataster (Lage) müssen in den Grenzen übereinstimmen. Bei Widerspruch → Berichtigungsantrag.'},
+  {lf:'LF5',pb:'Pb2',q:'In welchem Format werden ALKIS-Daten übertragen?',opts:['Shapefile (.shp)','NAS (XML/GML)','DXF','KML'],ans:1,exp:'NAS = Normbasierte Austauschschnittstelle. XML-basiertes Format (GML). Enthält Geometrie und Sachdaten gemeinsam. Standard für ALKIS-Datenübertragung zwischen Systemen.'},
+  {lf:'LF5',pb:'Pb2',q:'Was ist der Unterschied zwischen Grenzfeststellung und Grenzwiederherstellung?',opts:['Grenzfeststellung ist nur für neue Grenzen','Grenzfeststellung bestimmt Grenze rechtlich neu; Grenzwiederherstellung stellt bereits bekannte Grenze wieder her','Grenzwiederherstellung ist nur in MV','Es gibt keinen Unterschied'],ans:1,exp:'Grenzfeststellung: rechtlich bindende Neubestimmung der Grenzlage. Grenzwiederherstellung: Wiederherstellung einer früher festgestellten, aber nicht mehr vermarkten Grenze aus Unterlagen.'},
+  // LF6 – Bauleitplanung I (Pb3)
+  {lf:'LF6',pb:'Pb3',q:'Was besagt GRZ 0,4 in einem B-Plan?',opts:['40% des Gebäudes muss grün sein','Max. 40% der Grundstücksfläche darf überbaut werden','Mindestens 40% Grünfläche erforderlich','Max. 4 Stockwerke'],ans:1,exp:'GRZ = Grundflächenzahl: max. überbaubare Fläche / Grundstücksfläche. GRZ 0,4 = max. 40% bebaubar. Überschreitungsregel: max. 50% mehr für Nebenanlagen.'},
+  {lf:'LF6',pb:'Pb3',q:'Welches Dokument ist in der Bauleitplanung rechtlich verbindlich?',opts:['Flächennutzungsplan (FNP)','Bebauungsplan (B-Plan)','Raumordnungsplan','Landschaftsplan'],ans:1,exp:'Der Bebauungsplan ist eine Satzung der Gemeinde und daher rechtlich verbindlich für jedermann. Der FNP ist nur behördenintern bindend (§35 BauGB).'},
+  {lf:'LF6',pb:'Pb3',q:'Welche Nutzungsart erlaubt nach BauNVO sowohl Wohnen als auch nicht störendes Gewerbe?',opts:['WR – Reines Wohngebiet','WA – Allgemeines Wohngebiet','MI – Mischgebiet','GE – Gewerbegebiet'],ans:2,exp:'MI = Mischgebiet: Wohnen und nicht wesentlich störendes Gewerbe sind gleichwertig zulässig. WA erlaubt Gewerbe nur untergeordnet.'},
+  {lf:'LF6',pb:'Pb3',q:'Ein Grundstück hat 600 m². GRZ 0,3 ist festgesetzt. Wie viel m² darf maximal überbaut werden?',opts:['60 m²','120 m²','180 m²','300 m²'],ans:2,exp:'Überbaubare Fläche = Grundstücksfläche × GRZ = 600 × 0,3 = 180 m².'},
+  {lf:'LF6',pb:'Pb3',q:'Was ist die Einwurfsmasse im Umlegungsverfahren?',opts:['Gesamtheit aller eingebrachten Grundstücke','Erschließungsflächen','Verteilungsmasse nach Abzug','Baukostenanteil'],ans:0,exp:'Einwurfsmasse = alle Grundstücke der Eigentümer, die in das Umlegungsverfahren eingebracht werden. Davon werden Erschließungsflächen abgezogen → Verteilungsmasse.'},
+  // LF7 – Ingenieurvermessung (Pb3)
+  {lf:'LF7',pb:'Pb3',q:'Was ist ein Meterriss auf einer Baustelle?',opts:['Eine 1 Meter lange Messlatte','Horizontale Markierung 1 m über OKFF mit bekannter NHN-Höhe','Rissmarke im Mauerwerk','Maßstab 1:1.000'],ans:1,exp:'Meterriss: Horizontale Linie genau 1,000 m über Oberkante Fertigfußboden (OKFF). Höhe über NHN bekannt. Bezugslinie für alle Höhenmaße auf der Baustelle.'},
+  {lf:'LF7',pb:'Pb3',q:'Was ist der Unterschied zwischen Grob- und Feinabsteckung?',opts:['Grobabsteckung: ±5mm / Feinabsteckung: ±50cm','Grobabsteckung: ±20–50cm / Feinabsteckung: ±5–10mm','Beide haben dieselbe Genauigkeit','Feinabsteckung ist nur für Straßenbau'],ans:1,exp:'Grobabsteckung: erste Phase, ±20–50 cm, Eckpfähle des Gebäudes. Feinabsteckung: zweite Phase, ±5–10 mm, Schnurgerüst für Fundamente.'},
+  {lf:'LF7',pb:'Pb3',q:'Was sind Referenzpunkte beim Monitoring?',opts:['Punkte am Bauwerk','Punkte außerhalb der Gefahrenzone mit bekannten stabilen Koordinaten','GPS-Basispunkte','Vermessungspunkte der Katasterbehörde'],ans:1,exp:'Referenzpunkte liegen außerhalb der Gefahrenzone und dienen als stabile Ausgangspunkte. Objektpunkte sitzen am Bauwerk und werden überwacht.'},
+  {lf:'LF7',pb:'Pb3',q:'Welche Norm regelt Ingenieurvermessungen in Deutschland?',opts:['DIN 18709','DIN 18710','ISO 9001','HOAI 2021'],ans:1,exp:'DIN 18710: Ingenieurvermessung. Regelt Genauigkeitsstufen, Dokumentation, Anforderungen an Absteckungsaufgaben.'},
+  // LF8 – Topographie & Kartographie (Pb3)
+  {lf:'LF8',pb:'Pb3',q:'Was ist der Unterschied zwischen DGM und DOM?',opts:['DGM: nur Erdoberfläche (ohne Objekte) / DOM: mit Gebäuden und Bäumen','DGM für Deutschland, DOM für Österreich','DGM hat 1m Auflösung, DOM 5m','Kein Unterschied'],ans:0,exp:'DGM = Digitales Geländemodell: nur Erdoberfläche (1. LiDAR-Rückgabe). DOM = Digitales Oberflächenmodell: mit Gebäuden und Vegetation. nDOM = DOM − DGM = normiertes DOM.'},
+  {lf:'LF8',pb:'Pb3',q:'Was sind Bruchkanten im Geländemodell?',opts:['Fehler im DGM','Geländekanten (Böschungen, Ufer) die als harte Kanten im TIN integriert werden müssen','Höhenlinien','Gewässerlinien ohne Bedeutung'],ans:1,exp:'Bruchkanten = scharfe Geländesprünge (Böschungsoberkanten, Gewässerufer). Müssen im TIN als harte Kanten integriert werden, sonst werden Geländesprünge fälschlich geglättet.'},
+  {lf:'LF8',pb:'Pb3',q:'Welche Elemente muss ein Kartenlayout mindestens enthalten?',opts:['Nur Karteninhalt','Karteninhalt, Nordpfeil, Maßstab, Legende, Rahmen','Karteninhalt und Signaturenerklärung','Karteninhalt und Datum'],ans:1,exp:'Pflichtbestandteile: Karteninhalt, Nordpfeil, Maßstab (grafisch + numerisch), Legende, Blattrahmen mit Koordinatennetz.'},
+  {lf:'LF8',pb:'Pb3',q:'Was ist die Äquidistanz?',opts:['Abstand zwischen Isohypsen (Höhenlinien) auf der Karte','Abstand zwischen Koordinatengitternetzlinien','Auflösung des Geländemodells','Schrittweite der LiDAR-Punkte'],ans:0,exp:'Äquidistanz = Höhenabstand zwischen zwei benachbarten Isohypsen (Höhenlinien). In DTK10 MV: 5 m. Topographische Karten 1:25.000: 10 m.'},
+  // LF9 – GIS & Geodaten (Pb2)
+  {lf:'LF9',pb:'Pb2',q:'Welcher OGC-Dienst liefert Vektordaten und erlaubt Objektabfragen?',opts:['WMS','WMTS','WFS','WCS'],ans:2,exp:'WFS (Web Feature Service) liefert Vektordaten (GML/GeoJSON). Einzelne Objekte abfragbar/editierbar. WMS: nur Rasterbild. WMTS: gecachte Kacheln.'},
+  {lf:'LF9',pb:'Pb2',q:'Für welches EPSG-Koordinatensystem empfiehlt das LAiV MV GIS-Projekte?',opts:['EPSG:4326 (WGS84 geografisch)','EPSG:25832 (UTM 32N)','EPSG:25833 (UTM 33N)','EPSG:31468 (GK Zone 4)'],ans:2,exp:'EPSG:25833 = ETRS89 / UTM Zone 33N. Empfehlung für das gesamte MV-Landesgebiet. Zone 32N (EPSG:25832) alternativ für westliche Gebiete.'},
+  {lf:'LF9',pb:'Pb2',q:'Was ist GIS-Topologie?',opts:['Die Koordinatensysteme in GIS','Räumliche Beziehungen (Adjacenz, Inklusion, Überschneidung) zwischen Geometrien','Die Rasterauflösung','Die Datenbankstruktur'],ans:1,exp:'Topologie beschreibt räumliche Beziehungen: Adjacenz (benachbart), Inklusion (enthält), Überschneidung. GIS-Topologieregeln verhindern Lücken und Überlappungen in Flächengeometrien.'},
+  {lf:'LF9',pb:'Pb2',q:'Was ist der Unterschied zwischen Vektor- und Rasterdaten?',opts:['Vektordaten sind immer genauer','Vektordaten: Punkte/Linien/Flächen mit Attributen; Rasterdaten: Pixelgitter mit Zellwerten','Rasterdaten sind editierbar, Vektordaten nicht','Kein Unterschied'],ans:1,exp:'Vektor: präzise geometrische Objekte (Punkte, Linien, Flächen) mit Attributen, skalierbar. Raster: Pixelgitter mit Zellwerten, gut für Fernerkundung und DGM.'},
+  // LF10 – Bauleitplanung II (Pb3)
+  {lf:'LF10',pb:'Pb3',q:'Was unterscheidet den FNP vom B-Plan rechtlich?',opts:['FNP ist für Bürger verbindlich, B-Plan nicht','B-Plan ist Satzung (verbindlich für alle); FNP bindet nur Behörden','Beide sind gleich verbindlich','FNP gilt nur für Außenbereiche'],ans:1,exp:'B-Plan = Satzung der Gemeinde → rechtlich verbindlich für jedermann. FNP = vorbereitender Bauleitplan → bindet nur andere Behörden, nicht direkt Bürger.'},
+  {lf:'LF10',pb:'Pb3',q:'Was ist Abmarkung?',opts:['Kartographische Darstellung von Grenzen','Physische Kennzeichnung von Grenzpunkten durch Vermarkung im Gelände','Eintragung ins Grundbuch','Digitale Erfassung von Grenzen'],ans:1,exp:'Abmarkung = Anbringen von Grenzzeichen (Grenzstein, Bolzen, Rohr) im Gelände. Pflicht nach Grenzfeststellung. Nichtdurchführung ist eine Ordnungswidrigkeit.'},
+  {lf:'LF10',pb:'Pb3',q:'Was ist eine Grenzbegradigung?',opts:['Neue gerade Grenze zwischen Nachbarn durch flächenneutralen Tausch','Entfernung alter Grenzsteine','Korrektur von ALKIS-Fehlern','Neue Straßenführung'],ans:0,exp:'Grenzbegradigung = flächenneutraler Austausch von Grundstücksteilen zwischen Nachbarn, um eine gerade Grenzlinie zu erzeugen. Ablauf wie Zerlegung.'},
+  // LF11 – Wertermittlung I (Pb3)
+  {lf:'LF11',pb:'Pb3',q:'Was ist der Verkehrswert nach §194 BauGB?',opts:['Kaufpreis laut Vertrag','Preis im gewöhnlichen Geschäftsverkehr ohne ungewöhnliche Einflüsse','Schätzung des Finanzamts','Versicherungswert'],ans:1,exp:'Verkehrswert = Marktwert = Preis, der im gewöhnlichen Geschäftsverkehr zum Bewertungsstichtag zu erzielen wäre. Ausgeschlossen: persönliche Verhältnisse, ungewöhnliche Umstände.'},
+  {lf:'LF11',pb:'Pb3',q:'Welches Wertermittlungsverfahren eignet sich für ein vermietetes Mehrfamilienhaus?',opts:['Sachwertverfahren','Vergleichswertverfahren','Ertragswertverfahren','Liquidationsverfahren'],ans:2,exp:'Ertragswertverfahren: Wert aus Ertragspotenzial (Mieteinnahmen). Für Renditeimmobilien und Mietwohnhäuser. V = Bodenwert + Reinertrag × Vervielfältiger.'},
+  {lf:'LF11',pb:'Pb3',q:'Was ist ein Bodenrichtwert?',opts:['Kaufpreis eines einzelnen Grundstücks','Durchschnittlicher Lagewert des Bodens je m² in einem Gebiet','Baurechtlicher Grundstückswert','Verkehrswert inkl. Gebäude'],ans:1,exp:'Bodenrichtwert = durchschnittlicher Lagewert je m² Grundstücksfläche in einem Richtwertgebiet. Ermittelt durch Gutachterausschuss aus Kaufpreissammlung. In MV: BORIS.MV.'},
+  // LF12 – Wertermittlung II (Pb3)
+  {lf:'LF12',pb:'Pb3',q:'Wer ermittelt Bodenrichtwerte in Deutschland?',opts:['Finanzamt','Grundbuchamt','Gutachterausschuss','Katasteramt'],ans:2,exp:'Gutachterausschuss – unabhängiges Sachverständigengremium. Führt Kaufpreissammlung, ermittelt Bodenrichtwerte, erstellt Marktberichte. In MV: BORIS.MV Portal.'},
+  {lf:'LF12',pb:'Pb3',q:'Welches Wertermittlungsverfahren nutzt NHK 2010?',opts:['Vergleichswertverfahren','Ertragswertverfahren','Sachwertverfahren','Residualwertverfahren'],ans:2,exp:'Sachwertverfahren: NHK 2010 (Normalherstellungskosten) × BGF × (1 − Alterswertminderung) × Marktanpassungsfaktor = Gebäudesachwert.'},
+  {lf:'LF12',pb:'Pb3',q:'Was ist der Liegenschaftszinssatz?',opts:['Grunderwerbsteuer-Satz','Marktübliche Renditeerwartung für Immobilien (für Ertragswertverfahren)','Hypothekenzins','Bodenrichtwert je m²'],ans:1,exp:'Liegenschaftszinssatz = marktübliche Renditeerwartung des Kapitalmarkts für Immobilien. Ermittelt durch Gutachterausschuss. Wird für Vervielfältiger im Ertragswertverfahren verwendet.'},
+  {lf:'LF12',pb:'Pb3',q:'Was ist die Alterswertminderung im Sachwertverfahren?',opts:['Abschreibung des Bodenwerts','Wertminderung des Gebäudes durch Alter und Abnutzung','Marktanpassungsfaktor','Zinsvorteil älterer Gebäude'],ans:1,exp:'Alterswertminderung = Alter / Gesamtnutzungsdauer. Linearer Abzug vom Gebäudesachwert. Beispiel: 20 Jahre alt, GND 80 Jahre → 20/80 = 25% Wertminderung.'},
+  // LF13 – Trigonometrische Höhenmessung (Pb1)
+  {lf:'LF13',pb:'Pb1',q:'Wie lautet die Formel für den Höhenunterschied in der Tachymetrie?',opts:['Δh = s·sin(z)+i−r','Δh = s·cos(z)+i−r','Δh = HD·sin(z)+i−r','Δh = R−V'],ans:1,exp:'Δh = s·cos(z) + i − r. s = Schrägdistanz, z = Zenitwinkel [gon], i = Instrumentenhöhe, r = Zielhöhe. Oder gleichwertig: Δh = HD·cot(z) + i − r.'},
+  {lf:'LF13',pb:'Pb1',q:'Wie wird die Horizontaldistanz aus Schrägdistanz und Zenitwinkel berechnet?',opts:['HD = s × cos(z)','HD = s × sin(z)','HD = s / cos(z)','HD = s × tan(z)'],ans:1,exp:'HD = s × sin(z). Bei z=100 gon (horizontal): sin(100g) = 1, also HD = s. Bei geneigter Visur nimmt HD ab.'},
+  {lf:'LF13',pb:'Pb1',q:'Was ergibt z_I + z_II bei einer fehlerfreien Zwei-Lagen-Messung?',opts:['200 gon','300 gon','400 gon','0 gon'],ans:2,exp:'Probe Zwei-Lagen: z_I + z_II = 400 gon (Vollkreis). Abweichung zeigt Instrumentenfehler. Mittelwert: z_m = (z_I + 400 − z_II) / 2.'},
+  {lf:'LF13',pb:'Pb1',q:'Was ist die Instrumentenhöhe i?',opts:['Höhe des Prismas','Höhe vom Boden bis zur Kippachse der Totalstation','Höhe des Fernrohrs','NHN-Höhe des Standpunkts'],ans:1,exp:'Instrumentenhöhe i = Abstand vom Boden (Bodennagel/Messpunkt) bis zur Kippachse der Totalstation. Gemessen mit Maßband. Typisch: 1,50–1,65 m.'},
+  // BERECHNUNGSAUFGABEN (prüfungsrelevant)
+  {lf:'LF3',pb:'Pb2',q:'Nivellement: H_A = 38,420 m, Rückblick R = 1,534 m, Vorblick V = 1,119 m. Wie groß ist H_B?',opts:['37,005 m','38,835 m','39,954 m','39,039 m'],ans:1,exp:'IH = H_A + R = 38,420 + 1,534 = 39,954 m. H_B = IH − V = 39,954 − 1,119 = 38,835 m NHN.'},
+  {lf:'LF6',pb:'Pb3',q:'Grundstück 800 m², GRZ 0,35. Wie viel m² darf maximal überbaut werden (ohne Überschreitung)?',opts:['280 m²','315 m²','350 m²','420 m²'],ans:0,exp:'Überbaubare Fläche = 800 × 0,35 = 280 m² (ohne Nebenanlagen-Überschreitung).'},
+  {lf:'LF2',pb:'Pb2',q:'GNSS-Messung: h_ellipsoidisch = 28,432 m, N = 27,124 m. Welche NHN-Höhe ergibt sich?',opts:['1,308 m','55,556 m','−1,308 m','27,124 m'],ans:0,exp:'H_NHN = h − N = 28,432 − 27,124 = 1,308 m NHN.'},
+  {lf:'LF3',pb:'Pb2',q:'Winkelumrechnung: 90° entsprechen wie vielen Gon?',opts:['90 gon','100 gon','111 gon','360 gon'],ans:1,exp:'gon = ° × 10/9 = 90 × 10/9 = 100 gon. Der rechte Winkel entspricht 100 gon im metrischen System.'},
+  {lf:'LF13',pb:'Pb1',q:'Schrägdistanz s = 134,55 m, Zenitwinkel z = 77,22 gon. Welche Horizontaldistanz ergibt sich (näherungsweise)?',opts:['131,27 m','134,55 m','127,44 m','139,65 m'],ans:0,exp:'HD = s × sin(z) = 134,55 × sin(77,22 gon). 77,22 gon = 69,5° → sin(69,5°) ≈ 0,936. HD ≈ 131,27 m.'},
 ];
 
+// ════════════════════ FORMULAS & CALCULATORS ════════════════════
 const FORMULAS = [
-  {icon:'📏',title:'Nivellement – Grundformeln',lf:'LF3',formula:'Δh = R − V\nIH = H_A + R\nH_B = IH − V = H_A + R − V\n\nSchlussfehler:\nf_h = Σ(R−V) − (H_E − H_A)\nf_h,zul = ±10 mm × √L[km]',desc:'R = Rückblick auf bekanntem Punkt A | V = Vorblick auf Neupunkt B | IH = Instrumentenhorizont',
-  calc:{id:'niv',label:'Rechner: H_B berechnen',inputs:[{id:'ha',label:'H_A (m)',def:'38.420'},{id:'r',label:'R – Rückblick (m)',def:'1.534'},{id:'v',label:'V – Vorblick (m)',def:'1.119'}],fn:'(ha,r,v)=>({res:"H_B = "+(parseFloat(ha)+parseFloat(r)-parseFloat(v)).toFixed(3)+" m NHN"})'}},
-  {icon:'🎯',title:'Tachymetrie – Rechenformeln',lf:'LF3/LF13',formula:'HD = s × sin(z)\nΔh = s × cos(z) + i − z\n   = HD × cot(z) + i − z\n\nKoordinaten:\nΔY = HD × sin(t)\nΔX = HD × cos(t)',desc:'s = Schrägdistanz | z = Zenitwinkel [gon] | i = Instrumentenhöhe | z/r = Zielhöhe | t = Richtungswinkel',
-  calc:{id:'tach',label:'Rechner: Δh berechnen',inputs:[{id:'s',label:'s – Schrägdistanz (m)',def:'134.55'},{id:'z',label:'z – Zenitwinkel (gon)',def:'77.22'},{id:'ii',label:'i – Instrh. (m)',def:'1.600'},{id:'rr',label:'r – Zielhöhe (m)',def:'1.600'}],fn:'(s,z,ii,rr)=>{const zrad=parseFloat(z)*Math.PI/200;const hd=(parseFloat(s)*Math.sin(zrad));const dh=parseFloat(s)*Math.cos(zrad)+parseFloat(ii)-parseFloat(rr);return {res:"HD = "+hd.toFixed(3)+" m  |  Δh = "+dh.toFixed(3)+" m"};}'}},
-  {icon:'🧭',title:'Richtungswinkel & Strecke',lf:'LF3/LF4',formula:'tan(t) = ΔY / ΔX\n\nQuadrantenregeln (ΔY = Y₂−Y₁, ΔX = X₂−X₁):\n I:  ΔX>0, ΔY≥0  → t = arctan(ΔY/ΔX)\nII:  ΔX<0         → t = arctan(ΔY/ΔX) + 200\nIV:  ΔX>0, ΔY<0  → t = arctan(ΔY/ΔX) + 400\n\nStrecke: s = √(ΔY² + ΔX²)',desc:'Richtungswinkel: 0–400 gon, im Uhrzeigersinn von Nord/X-Achse.',
-  calc:{id:'rw',label:'Rechner: t und s',inputs:[{id:'y1',label:'Y₁',def:'500'},{id:'x1',label:'X₁',def:'500'},{id:'y2',label:'Y₂',def:'600'},{id:'x2',label:'X₂',def:'450'}],fn:'(y1,x1,y2,x2)=>{const dy=parseFloat(y2)-parseFloat(y1);const dx=parseFloat(x2)-parseFloat(x1);const s=Math.sqrt(dy*dy+dx*dx);let t=Math.atan(Math.abs(dy)/Math.abs(dx))*200/Math.PI;if(dx<0){t=200+Math.atan(dy/dx)*200/Math.PI;}else if(dy<0){t=400+Math.atan(dy/dx)*200/Math.PI;}else{t=Math.atan(dy/dx)*200/Math.PI;}if(t<0)t+=400;return{res:"t = "+t.toFixed(4)+" gon  |  s = "+s.toFixed(3)+" m"};}'}},
-  {icon:'📐',title:'Winkelumrechnung Gon ↔ Grad',lf:'LF3',formula:'gon = ° × 10/9\n° = gon × 9/10\nrad = gon × π / 200\n\nBeispiele:\n90° = 100 gon\n180° = 200 gon\n360° = 400 gon',desc:'In der deutschen Vermessung immer Gon! Vollkreis = 400 gon.',
-  calc:{id:'winkel',label:'Rechner: Grad ↔ Gon',inputs:[{id:'deg',label:'Grad (°)',def:'45'}],fn:'(deg)=>{const g=parseFloat(deg)*10/9;const r=parseFloat(deg)*Math.PI/180;return{res:deg+"° = "+g.toFixed(4)+" gon = "+r.toFixed(6)+" rad"};}'}},
-  {icon:'🌍',title:'Geoidundulation (GNSS→NHN)',lf:'LF2',formula:'H_NHN = h_ellipsoidisch − N\n\nN = Geoidundulation (GCG2016)\nIn MV: N ≈ 35–47 m\n\nGenauigkeit HEPS: ±1–3 cm',desc:'h = ellipsoidische GNSS-Höhe | N = Geoidmodell (GCG2016) | H = NHN-Höhe',
-  calc:{id:'geoid',label:'Rechner: NHN berechnen',inputs:[{id:'h',label:'h – Ellipsoidhöhe (m)',def:'28.432'},{id:'n',label:'N – Geoidund. (m)',def:'27.124'}],fn:'(h,n)=>({res:"H_NHN = "+(parseFloat(h)-parseFloat(n)).toFixed(3)+" m NHN"})'}},
-  {icon:'🗺️',title:'Maßstab und Kartenberechnung',lf:'LF2',formula:'Karten-Länge = Natur-Länge / M\nNatur-Länge = Karten-Länge × M\n\nFläche: K-Fläche = N-Fläche / M²\n\nBeispiel M 1:1000:\n4,5 cm → 45,00 m (Natur)',desc:'M = Maßstabszahl (z.B. 1000 für 1:1000). Flächen: Maßstabsquadrat beachten!',
-  calc:{id:'mstab',label:'Rechner: Natur-Strecke',inputs:[{id:'kl',label:'Karten-Länge (cm)',def:'4.5'},{id:'m',label:'Maßstab M (z.B. 1000)',def:'1000'}],fn:'(kl,m)=>{const nat=parseFloat(kl)*parseFloat(m)/100;return{res:kl+" cm × M 1:"+m+" = "+nat.toFixed(2)+" m (Natur)"};}'}},
-  {icon:'📊',title:'Schlussfehler Polygonzug',lf:'LF4',formula:'Winkelfehler:\nf_w = Σβ − (n+1)×200 gon\n\nLinearfehler:\nf_L = √(Δf_Y² + Δf_X²)\n\nRelativfehler:\n1/T = f_L / Σs\n\nZulässig: f_w,zul = ±30\'\'\' × √n',desc:'n = Anzahl Brechungswinkel | Σs = Summe aller Seiten | f_Y, f_X = Koordinatenabschluss',calc:null},
-  {icon:'💰',title:'Sachwertverfahren (Immobilien)',lf:'LF11/LF12',formula:'V = Bodenwert + Gebäudesachwert\n\nGebäudesachwert = NHK × BGF\n  × (1 − Alterswertmind.)\n  × Marktanpassungsfaktor\n\nAlterswertmind. = Alter / GND',desc:'NHK 2010 = Normalherstellungskosten | BGF = Bruttogrundfläche | GND = Gesamtnutzungsdauer',calc:null},
+  {icon:'📏',title:'Nivellement',lf:'LF3',formula:'Δh = R − V\nIH = H_A + R\nH_B = IH − V\n\nSchlussfehler:\nf_h = Σ(R−V) − (H_E − H_A)\nf_h,zul = ±10 mm × √L[km]',desc:'R=Rückblick auf bekanntem Punkt | V=Vorblick auf Neupunkt | IH=Instrumentenhorizont',
+  calc:{id:'niv',inputs:[{id:'ha',l:'H_A (m)',v:'38.420'},{id:'r',l:'R-Rückblick (m)',v:'1.534'},{id:'v',l:'V-Vorblick (m)',v:'1.119'}],fn:'(ha,r,v)=>"H_B = "+(+ha+ +r- +v).toFixed(3)+" m NHN  |  IH = "+(+ha+ +r).toFixed(3)+" m"'}},
+  {icon:'🎯',title:'Tachymetrie Δh',lf:'LF3/LF13',formula:'HD = s × sin(z)\nΔh = s × cos(z) + i − r\n\nKoordinaten:\nΔY = HD × sin(t)\nΔX = HD × cos(t)',desc:'s=Schrägdistanz | z=Zenitwinkel [gon] | i=Instrumentenhöhe | r=Zielhöhe | t=Richtungswinkel',
+  calc:{id:'tach',inputs:[{id:'s',l:'s – Schrägdistanz (m)',v:'134.55'},{id:'z',l:'z – Zenitwinkel (gon)',v:'77.22'},{id:'ii',l:'i – Instrument (m)',v:'1.600'},{id:'rr',l:'r – Zielhöhe (m)',v:'1.600'}],fn:'(s,z,ii,rr)=>{const zr=+z*Math.PI/200;const hd=(+s*Math.sin(zr));const dh=+s*Math.cos(zr)+ +ii- +rr;return"HD="+hd.toFixed(3)+"m  Δh="+dh.toFixed(3)+"m";}'}},
+  {icon:'🧭',title:'Richtungswinkel & Strecke',lf:'LF3/LF4',formula:'tan(t) = ΔY / ΔX\n\nI:  ΔX>0,ΔY≥0 → t = arctan(ΔY/ΔX)\nII: ΔX<0      → t = arctan(ΔY/ΔX)+200\nIV: ΔX>0,ΔY<0 → t = arctan(ΔY/ΔX)+400\n\nStrecke: s = √(ΔY² + ΔX²)',desc:'ΔY=Y₂−Y₁ | ΔX=X₂−X₁ | Richtungswinkel von Nord im Uhrzeigersinn (0–400 gon)',
+  calc:{id:'rw',inputs:[{id:'y1',l:'Y₁',v:'500'},{id:'x1',l:'X₁',v:'500'},{id:'y2',l:'Y₂',v:'600'},{id:'x2',l:'X₂',v:'450'}],fn:'(y1,x1,y2,x2)=>{const dy=+y2-+y1,dx=+x2-+x1,s=Math.sqrt(dy*dy+dx*dx);let t=Math.atan(Math.abs(dy)/Math.abs(dx))*200/Math.PI;if(dx<0)t=200+Math.atan(dy/dx)*200/Math.PI;else if(dy<0)t=400+Math.atan(dy/dx)*200/Math.PI;else t=Math.atan(dy/dx)*200/Math.PI;if(t<0)t+=400;return"t="+t.toFixed(4)+"gon  s="+s.toFixed(3)+"m";}'}},
+  {icon:'🔄',title:'Winkelumrechnung',lf:'LF3',formula:'gon = ° × 10/9\n° = gon × 9/10\nrad = gon × π / 200\n\nBeispiele:\n90° = 100 gon\n180° = 200 gon\n360° = 400 gon',desc:'In der deutschen Vermessung immer Gon! Vollkreis = 400 gon.',
+  calc:{id:'winkel',inputs:[{id:'deg',l:'Grad (°)',v:'45'}],fn:'(deg)=>{const g=+deg*10/9,r=+deg*Math.PI/180;return deg+"° = "+g.toFixed(4)+"gon = "+r.toFixed(5)+"rad";}'}},
+  {icon:'🌍',title:'Geoidundulation',lf:'LF2',formula:'H_NHN = h_ellipsoidisch − N\n\nN = Geoidundulation (GCG2016)\nIn MV: N ≈ 35–47 m',desc:'h = GNSS-Höhe | N = Geoidmodell GCG2016 | H = NHN-Höhe',
+  calc:{id:'geoid',inputs:[{id:'h',l:'h_ell (m)',v:'28.432'},{id:'n',l:'N – Geoidund. (m)',v:'27.124'}],fn:'(h,n)=>"H_NHN = "+(+h- +n).toFixed(3)+"m NHN"'}},
+  {icon:'🗺️',title:'Maßstab & Karte',lf:'LF2',formula:'Natur = Karte × M\nKarte = Natur / M\n\nFläche: K = N / M²\n\nBeispiel M 1:1000:\n4,5cm → 45,00m',desc:'M = Maßstabszahl. Flächen: M² beachten!',
+  calc:{id:'mstab',inputs:[{id:'kl',l:'Karte (cm)',v:'4.5'},{id:'m',l:'Maßstab M',v:'1000'}],fn:'(kl,m)=>{const nat=+kl*+m/100;return kl+"cm × M 1:"+m+" = "+nat.toFixed(2)+"m Natur";}'}},
+  {icon:'📐',title:'GRZ & GFZ Berechnung',lf:'LF6',formula:'überbaubare Fläche = A_Grundstück × GRZ\nGeschossfläche = A_Grundstück × GFZ\n\nÜberschreitung Nebenanlagen:\nmax. GRZ × 1,5',desc:'GRZ=Grundflächenzahl | GFZ=Geschossflächenzahl | A=Grundstücksfläche [m²]',
+  calc:{id:'grz',inputs:[{id:'a',l:'Grundstück m²',v:'800'},{id:'grz',l:'GRZ',v:'0.35'},{id:'gfz',l:'GFZ',v:'0.8'}],fn:'(a,grz,gfz)=>{const ub=+a*+grz,gf=+a*+gfz;return"Überbaubar: "+ub+"m²  Geschossfläche: "+gf+"m²  (max.Nebenanl.: "+(ub*1.5).toFixed(0)+"m²)";}'}},
+  {icon:'💰',title:'Sachwertverfahren',lf:'LF12',formula:'V = Bodenwert + Gebäudesachwert\n\nGebäudesachwert =\n  NHK × BGF × (1 − AlterWertMind.)\n  × Marktanpassungsfaktor\n\nAWM = Alter / GND',desc:'NHK=Normalherstellungskosten 2010 | BGF=Bruttogrundfläche | GND=Gesamtnutzungsdauer',
+  calc:{id:'sawert',inputs:[{id:'nhk',l:'NHK [€/m²]',v:'1200'},{id:'bgf',l:'BGF [m²]',v:'150'},{id:'alter',l:'Alter [J]',v:'20'},{id:'gnd',l:'GND [J]',v:'80'},{id:'maf',l:'Marktanp.fakt.',v:'0.9'}],fn:'(nhk,bgf,alter,gnd,maf)=>{const awm=+alter/+gnd,gsw=+nhk*+bgf*(1-awm)*+maf;return"AWM="+awm.toFixed(2)+"  Gebäudesachwert≈"+gsw.toFixed(0)+"€";}'}},
 ];
 
-// ═══════════════════════════════════════════════════════════════════
-// STATE
-// ═══════════════════════════════════════════════════════════════════
-let flashDeck = [];
-let flashIdx = 0;
-let cardRatings = JSON.parse(localStorage.getItem('vmt-ratings') || '{}');
-let quizQueue = [];
-let quizIdx = 0;
-let quizScore = 0;
-let quizAnswered = false;
+// ════════════════════ STUDY PLAN ════════════════════
+const PLAN = [
+  {week:'📋 Woche 1 – 03.–07. Juni 2026',pb:'Pb4 + Pb1-Vorbereitung',days:[
+    {date:'Di 03.06.',lf:'LF1 – Grundlagen',topics:'BBiG, JArbSchG, ArbZG, Sozialversicherung, ÖbVI, GeoVermG MV',exam:false},
+    {date:'Mi 04.06.',lf:'LF13 – Trig. Höhenmessung',topics:'Tachymetrie: Δh=s·cos(z)+i−r, HD=s·sin(z), Polarkoordinaten, Zwei-Lagen',exam:false},
+    {date:'Do 05.06.',lf:'LF2 – Geodätische Grundlagen',topics:'Geoid, NHN, GRS80, ETRS89, UTM/EPSG:25833, Geoidundulation, SAPOS HEPS',exam:false},
+    {date:'Fr 06.06.',lf:'LF3 – Höhenmessung & Nivellement',topics:'Δh=R−V, IH, Schlussfehler, Goldene Regel, Richtungswinkel, Quadrantenregel',exam:false},
+    {date:'Sa 07.06.',lf:'Wiederholung LF1–3',topics:'Quiz-Modus: Pb4+Pb2 Grundlagen. Karteikarten alle LFs durchgehen.',exam:false},
+  ]},
+  {week:'📐 Woche 2 – 08.–12. Juni 2026',pb:'Pb2-Vorbereitung + Pb1-Abgabe',days:[
+    {date:'Mo 08.06.',lf:'LF4 – Lagemessung & Koordinaten',topics:'Vorwärts-/Rückwärtsschnitt, Bogenschnitt, Polygonzug, Helmert-Transformation, MKQ',exam:false},
+    {date:'Di 09.06.',lf:'LF5 – ALKIS & Kataster',topics:'ALKIS, NAS, Flurstück, Zerlegung, Verschmelzung, Übereinstimmungsgebot',exam:false},
+    {date:'Mi 10.06.',lf:'Pb2-Wiederholung (LF2–5)',topics:'Alle Formeln: Nivellement, Tachymetrie, Koordinatenberechnung. Formelrechner nutzen.',exam:false},
+    {date:'Do 11.06.',lf:'LF13 nochmals + Pb1-Vorbereitung',topics:'Betrieblicher Auftrag: Vorgehen, Dokumentation, Präsentation des Arbeitsergebnisses',exam:false},
+    {date:'Fr 12.06.',lf:'🔴 Pb1 – Betrieblicher Auftrag ABGABE',topics:'Abgabetermin! Danach: LF9 GIS beginnen.',exam:true},
+  ]},
+  {week:'🗺️ Woche 3 – 13.–18. Juni 2026',pb:'Pb2 + Pb3-Vorbereitung',days:[
+    {date:'Sa 13.06.',lf:'LF9 – GIS & Geodaten',topics:'Vektor/Raster, WMS/WFS/WMTS, SQL, Topologie, QGIS, EPSG:25833, GDI-MV',exam:false},
+    {date:'Mo 15.06.',lf:'LF6 – Bauleitplanung I',topics:'FNP vs. B-Plan, GRZ/GFZ/BMZ, BauNVO-Gebietstypen, Umlegung, Erschließungsbeitrag',exam:false},
+    {date:'Di 16.06.',lf:'LF7 – Ingenieurvermessung',topics:'Grob-/Feinabsteckung, Schnurgerüst, Meterriss, Monitoring, DIN 18710',exam:false},
+    {date:'Mi 17.06.',lf:'LF8 – Topographie & Kartographie',topics:'LiDAR/ALS, DGM/DOM/nDOM, TIN/Bruchkanten, Kartenlayout, Isohypsen, DOP20',exam:false},
+    {date:'Do 18.06.',lf:'LF10 – Katasteroperationen',topics:'Grenzfeststellung, Abmarkung, Grenzbegradigung, Grenzwiederherstellung',exam:false},
+  ]},
+  {week:'🏠 Woche 4 – 19.–24. Juni 2026 – PRÜFUNGSWOCHE',pb:'Pb2, Pb3, Pb4',days:[
+    {date:'Fr 19.06.',lf:'LF11 – GRZ/GFZ & 3D-Geoprodukte',topics:'CityGML, TLS, DOP20, 3D-Stadtmodell; GRZ/GFZ Rechenaufgaben',exam:false},
+    {date:'Sa 20.06.',lf:'LF12 – Grundstückswertermittlung',topics:'Verkehrswert §194, Vergleichswert/Ertragswert/Sachwert, Gutachterausschuss, BORIS.MV',exam:false},
+    {date:'Mo 22.06.',lf:'🔴 Pb2 – Geodatenbearbeitung (150 min)',topics:'LF2,3,4,5,9 – morgens letzte Wiederholung: Formeln, Koordinatenberechnung, GNSS',exam:true},
+    {date:'Di 23.06.',lf:'🔴 Pb3 – Öffentliche Aufgaben (90 min)',topics:'LF6,7,8,10,11,12 – morgens: B-Plan, GRZ, Wertermittlung, Absteckung',exam:true},
+    {date:'Mi 24.06.',lf:'🔴 Pb4 – Wirtschaft & Sozialkunde (60 min)',topics:'LF1 – BBiG, JArbSchG, Sozialversicherung, ÖbVI – relativ kurz!',exam:true},
+  ]},
+  {week:'🎤 Woche 5 – 25. Juni – 09. Juli 2026 – FACHGESPRÄCH',pb:'PB1 – Fachgespräch',days:[
+    {date:'25.–29.06.',lf:'Fachgespräch – Alle LFs wiederholen',topics:'Prüfer fragt quer durch alle LF. Schwerpunkte: Messverfahren, ALKIS, Wertermittlung erklären können.',exam:false},
+    {date:'30.06.–05.07.',lf:'Praxisbezug & Präsentation üben',topics:'Ergebnisse Pb1 erläutern. Typische Fragen: Warum welches Verfahren? Fehlerquellen? MV-Bezug!',exam:false},
+    {date:'Mi 09.07.',lf:'🔴 Fachgespräch (30 min)',topics:'Mündliche Prüfung. Ruhe bewahren, strukturiert antworten, Fachbegriffe sicher verwenden.',exam:true},
+  ]},
+];
 
-// ═══════════════════════════════════════════════════════════════════
-// NAVIGATION
-// ═══════════════════════════════════════════════════════════════════
-function showPage(id) {
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('act'));
-  document.querySelectorAll('.ntab').forEach(b => b.classList.remove('act'));
+// ═══════════════════════ STATE & INIT ═══════════════════════
+let flashDeck=[],flashIdx=0,cardRatings=JSON.parse(localStorage.getItem('vmt-r')||'{}');
+let quizQueue=[],quizIdx=0,quizScore=0,quizAnswered=false;
+
+function showPage(id){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('act'));
+  document.querySelectorAll('.ntab').forEach(b=>b.classList.remove('act'));
   document.getElementById('page-'+id).classList.add('act');
-  document.querySelectorAll(`[onclick="showPage('${id}')"]`).forEach(b => b.classList.add('act'));
-  if (id === 'flash') initFlash();
-  if (id === 'quiz') initQuiz();
-  if (id === 'formeln') renderFormulas();
-  if (id === 'progress') renderProgress();
-  if (id === 'home') updateHomeStats();
+  document.querySelectorAll(`[onclick="showPage('${id}')"]`).forEach(b=>b.classList.add('act'));
+  if(id==='flash')initFlash();
+  if(id==='quiz')initQuiz();
+  if(id==='formeln')renderFormulas();
+  if(id==='plan')renderPlan();
+  if(id==='progress')renderProgress();
+  if(id==='home')updateHome();
 }
 
-// ═══════════════════════════════════════════════════════════════════
 // HOME
-// ═══════════════════════════════════════════════════════════════════
-const EXAMS = [
-  {l:'Pb1 Auftrag', d:'2026-06-12'},{l:'Pb2 Geodaten', d:'2026-06-22'},
-  {l:'Pb3 Öff.Aufg.', d:'2026-06-23'},{l:'Pb4 Wirtschaft', d:'2026-06-24'},
-  {l:'Fachgespräch', d:'2026-07-09'}
-];
-function updateHomeStats() {
-  const known = Object.values(cardRatings).filter(v=>v>=2).length;
-  const qr = parseInt(localStorage.getItem('vmt-qright')||'0');
-  const streak = parseInt(localStorage.getItem('vmt-streak')||'0');
-  document.getElementById('st-total').textContent = CARDS.length;
-  document.getElementById('st-known').textContent = known;
-  document.getElementById('st-qright').textContent = qr;
-  document.getElementById('st-streak').textContent = streak;
-  // Countdown
-  const now = new Date();
-  const next = EXAMS.find(e=>new Date(e.d)>=now);
-  const cd = document.getElementById('home-countdown');
-  if (next) {
-    const diff = Math.ceil((new Date(next.d)-now)/86400000);
-    cd.textContent = `⏳ Nächste Prüfung: ${next.l} in ${diff} Tagen (${next.d})`;
-  } else {
-    cd.textContent = '✅ Alle Prüfungstermine vergangen!';
-  }
+const EXAMS=[{l:'Pb1 Auftrag',d:'2026-06-12'},{l:'Pb2 Geodaten',d:'2026-06-22'},{l:'Pb3 Öff.Aufg.',d:'2026-06-23'},{l:'Pb4 Wirtschaft',d:'2026-06-24'},{l:'Fachgespräch',d:'2026-07-09'}];
+function updateHome(){
+  const now=new Date();
+  const next=EXAMS.find(e=>new Date(e.d)>=now);
+  const cd=document.getElementById('home-countdown');
+  if(next){const diff=Math.ceil((new Date(next.d)-now)/86400000);cd.innerHTML=`⏳ Nächste Prüfung: <strong>${next.l}</strong> in <strong style="color:#38bdf8">${diff} Tagen</strong> (${next.d})`;}
+  else cd.textContent='✅ Alle Prüfungen bestanden!';
+  const known=Object.values(cardRatings).filter(v=>v>=2).length;
+  document.getElementById('st-known').textContent=known;
+  document.getElementById('st-qright').textContent=localStorage.getItem('vmt-qr')||0;
+  document.getElementById('st-quiz-total').textContent=localStorage.getItem('vmt-qt')||0;
 }
 
-// ═══════════════════════════════════════════════════════════════════
 // FLASHCARDS
-// ═══════════════════════════════════════════════════════════════════
-function initFlash() {
-  const lfFilter = document.getElementById('fc-lf-filter').value;
-  const modeFilter = document.getElementById('fc-mode-filter').value;
-  flashDeck = CARDS.filter(c => lfFilter === 'all' || c.lf === lfFilter);
-  if (modeFilter === 'hard') flashDeck.sort((a,b)=>(cardRatings[a.lf+a.t]||0)-(cardRatings[b.lf+b.t]||0));
-  else if (modeFilter === 'unseen') flashDeck = [...flashDeck.filter(c=>!cardRatings[c.lf+c.t]),...flashDeck.filter(c=>cardRatings[c.lf+c.t])];
-  // Shuffle (Fisher-Yates)
+function initFlash(){
+  const lff=document.getElementById('fc-lf-filter').value;
+  const mf=document.getElementById('fc-mode-filter').value;
+  flashDeck=CARDS.filter(c=>lff==='all'||c.lf===lff);
+  if(mf==='hard')flashDeck.sort((a,b)=>(cardRatings[a.lf+a.t]||0)-(cardRatings[b.lf+b.t]||0));
+  else if(mf==='unseen')flashDeck=[...flashDeck.filter(c=>!cardRatings[c.lf+c.t]),...flashDeck.filter(c=>cardRatings[c.lf+c.t])];
   else for(let i=flashDeck.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[flashDeck[i],flashDeck[j]]=[flashDeck[j],flashDeck[i]];}
-  flashIdx = 0;
-  showCard();
+  flashIdx=0;showCard();
 }
-function showCard() {
-  if (!flashDeck.length) return;
-  const c = flashDeck[flashIdx % flashDeck.length];
-  const card = document.getElementById('flashcard');
-  card.classList.remove('flipped');
-  document.getElementById('fc-badge').textContent = c.lf;
-  document.getElementById('fc-badge2').textContent = c.lf;
-  document.getElementById('fc-term').textContent = c.t;
-  document.getElementById('fc-def').innerHTML = c.d;
-  const pct = Math.round((flashIdx / flashDeck.length) * 100);
-  document.getElementById('fc-prog').style.width = pct + '%';
-  document.getElementById('fc-counter').textContent = `${flashIdx+1}/${flashDeck.length}`;
+function showCard(){
+  if(!flashDeck.length)return;
+  const c=flashDeck[flashIdx%flashDeck.length];
+  document.getElementById('flashcard').classList.remove('flipped');
+  document.getElementById('fc-badge').textContent=c.lf;
+  document.getElementById('fc-badge2').textContent=c.lf;
+  document.getElementById('fc-term').textContent=c.t;
+  document.getElementById('fc-def').innerHTML=c.d;
+  const pct=Math.round((flashIdx/flashDeck.length)*100);
+  document.getElementById('fc-prog').style.width=pct+'%';
+  document.getElementById('fc-counter').textContent=(flashIdx+1)+'/'+flashDeck.length;
 }
-function flipCard() { document.getElementById('flashcard').classList.toggle('flipped'); }
-function rateCard(score) {
-  const c = flashDeck[flashIdx % flashDeck.length];
-  cardRatings[c.lf+c.t] = score;
-  localStorage.setItem('vmt-ratings', JSON.stringify(cardRatings));
+function flipCard(){document.getElementById('flashcard').classList.toggle('flipped');}
+function rateCard(score){
+  const c=flashDeck[flashIdx%flashDeck.length];
+  cardRatings[c.lf+c.t]=score;
+  localStorage.setItem('vmt-r',JSON.stringify(cardRatings));
   flashIdx++;
-  if (flashIdx >= flashDeck.length) { flashIdx = 0; alert('🎉 Alle Karten durchgearbeitet! Nochmal von vorne.'); }
+  if(flashIdx>=flashDeck.length){alert('🎉 Alle Karten durch! Nochmal von vorne.');flashIdx=0;}
   showCard();
 }
 
-// ═══════════════════════════════════════════════════════════════════
 // QUIZ
-// ═══════════════════════════════════════════════════════════════════
-function initQuiz() {
-  quizQueue = [...QUIZ_DATA].sort(() => Math.random()-0.5);
-  quizIdx = 0; quizScore = 0;
-  renderQuizQuestion();
+function initQuiz(){
+  const lff=document.getElementById('quiz-lf-filter').value;
+  let pool=QUIZ_DATA;
+  if(lff==='all'){}
+  else if(lff.startsWith('Pb'))pool=QUIZ_DATA.filter(q=>q.pb===lff);
+  else pool=QUIZ_DATA.filter(q=>q.lf===lff);
+  quizQueue=[...pool].sort(()=>Math.random()-0.5);
+  quizIdx=0;quizScore=0;
+  renderQuizQ();
 }
-function renderQuizQuestion() {
-  const wrap = document.getElementById('quiz-wrap');
-  if (quizIdx >= quizQueue.length) {
-    showQuizResult();
-    return;
-  }
-  const q = quizQueue[quizIdx];
-  quizAnswered = false;
-  const opts = q.opts.map((o,i)=>`<button class="qopt" onclick="answerQuiz(${i})">${o}</button>`).join('');
-  wrap.innerHTML = `
-    <div class="quiz-wrap">
-      <div class="quiz-q">
-        <div class="qz-lf">${q.lf}</div>
-        <div class="qz-text">${q.q}</div>
-      </div>
-      <div class="quiz-opts">${opts}</div>
-      <div class="quiz-feedback" id="qfb"></div>
-      <div class="quiz-controls">
-        <div class="qz-score">Frage ${quizIdx+1} von ${quizQueue.length} | ✓ ${quizScore}</div>
-        <button class="qz-next" id="qnext" onclick="nextQuiz()" style="display:none">Weiter →</button>
-      </div>
-    </div>`;
+function renderQuizQ(){
+  const wrap=document.getElementById('quiz-wrap');
+  if(quizIdx>=quizQueue.length){showResult();return;}
+  const q=quizQueue[quizIdx];
+  quizAnswered=false;
+  const pct=Math.round((quizIdx/quizQueue.length)*100);
+  document.getElementById('quiz-prog').style.width=pct+'%';
+  document.getElementById('quiz-counter').textContent=(quizIdx+1)+'/'+quizQueue.length;
+  const opts=q.opts.map((o,i)=>`<button class="qopt" onclick="answerQ(${i})">${String.fromCharCode(65+i)}) ${o}</button>`).join('');
+  wrap.innerHTML=`<div class="quiz-q"><div class="qz-lf">${q.lf} · ${q.pb}</div><div class="qz-text">${q.q}</div></div>
+  <div class="quiz-opts">${opts}</div>
+  <div class="quiz-feedback" id="qfb"></div>
+  <div class="quiz-controls"><div class="qz-score">Frage ${quizIdx+1}/${quizQueue.length} | ✓ ${quizScore} richtig</div>
+  <button class="qz-next" id="qnext" onclick="nextQ()" style="display:none">Weiter →</button></div>`;
 }
-function answerQuiz(i) {
-  if (quizAnswered) return;
-  quizAnswered = true;
-  const q = quizQueue[quizIdx];
-  const opts = document.querySelectorAll('.qopt');
-  opts.forEach((o,idx) => {
+function answerQ(i){
+  if(quizAnswered)return;quizAnswered=true;
+  const q=quizQueue[quizIdx];
+  document.querySelectorAll('.qopt').forEach((o,idx)=>{
     o.classList.add('disabled');
-    if (idx === q.ans) o.classList.add('correct');
-    else if (idx === i && i !== q.ans) o.classList.add('wrong');
+    if(idx===q.ans)o.classList.add('correct');
+    else if(idx===i&&i!==q.ans)o.classList.add('wrong');
   });
-  const fb = document.getElementById('qfb');
-  const correct = i === q.ans;
-  if (correct) {
-    quizScore++;
-    const prev = parseInt(localStorage.getItem('vmt-qright')||'0');
-    localStorage.setItem('vmt-qright', prev+1);
-  }
-  fb.textContent = (correct ? '✓ Richtig! ' : '✗ Falsch. ') + q.exp;
-  fb.className = 'quiz-feedback show' + (correct ? '' : ' err');
-  document.getElementById('qnext').style.display = 'block';
+  const correct=i===q.ans;
+  if(correct){quizScore++;const qr=+(localStorage.getItem('vmt-qr')||0);localStorage.setItem('vmt-qr',qr+1);}
+  const qt=+(localStorage.getItem('vmt-qt')||0);localStorage.setItem('vmt-qt',qt+1);
+  const fb=document.getElementById('qfb');
+  fb.textContent=(correct?'✓ Richtig! ':'✗ Falsch. ')+q.exp;
+  fb.className='quiz-feedback show'+(correct?'':' err');
+  document.getElementById('qnext').style.display='block';
 }
-function nextQuiz() { quizIdx++; renderQuizQuestion(); }
-function showQuizResult() {
-  const pct = Math.round(quizScore/quizQueue.length*100);
-  const grade = pct>=80?'🏆 Sehr gut!':pct>=60?'👍 Gut!':pct>=40?'📚 Weiter üben':'💪 Nochmal probieren';
-  document.getElementById('quiz-wrap').innerHTML = `
-    <div class="result-screen">
-      <h2>Quiz abgeschlossen!</h2>
-      <div class="big-score">${pct}%</div>
-      <p>${grade}<br>${quizScore} von ${quizQueue.length} Fragen richtig</p>
-      <div class="result-btns">
-        <button class="rbtn pri" onclick="initQuiz()">🔄 Nochmal</button>
-        <button class="rbtn sec" onclick="showPage('home')">🏠 Startseite</button>
-      </div>
-    </div>`;
+function nextQ(){quizIdx++;renderQuizQ();}
+function showResult(){
+  const pct=Math.round(quizScore/quizQueue.length*100);
+  const g=pct>=80?'🏆 Sehr gut!':pct>=60?'👍 Gut!':pct>=40?'📚 Weiter üben!':'💪 Nochmal!';
+  document.getElementById('quiz-wrap').innerHTML=`<div class="result-screen">
+  <h2>Quiz abgeschlossen!</h2><div class="big-score">${pct}%</div>
+  <p>${g}<br>${quizScore} von ${quizQueue.length} richtig</p>
+  <div class="result-btns">
+  <button class="rbtn pri" onclick="initQuiz()">🔄 Nochmal</button>
+  <button class="rbtn sec" onclick="showPage('home')">🏠 Start</button></div></div>`;
 }
 
-// ═══════════════════════════════════════════════════════════════════
 // FORMULAS
-// ═══════════════════════════════════════════════════════════════════
-function renderFormulas() {
-  const grid = document.getElementById('formula-grid');
-  grid.innerHTML = FORMULAS.map(f => {
-    let calcHtml = '';
-    if (f.calc) {
-      const inputs = f.calc.inputs.map(inp=>`
-        <div><label>${inp.label}</label>
-        <input class="calc-input" id="${f.calc.id}_${inp.id}" value="${inp.def}" type="number" step="any"></div>`).join('');
-      const argIds = f.calc.inputs.map(inp=>`document.getElementById('${f.calc.id}_${inp.id}').value`).join(',');
-      const fn = f.calc.fn;
-      calcHtml = `
-        <div class="calc-section">
-          <div class="calc-row">${inputs}
-            <button class="calc-btn" onclick="runCalc('${f.calc.id}', ${fn.replace(/'/g,'"')}, [${argIds.replace(/\n/g,'')}])">= Berechnen</button>
-          </div>
-          <div class="calc-result" id="cr_${f.calc.id}"></div>
-        </div>`;
+function renderFormulas(){
+  document.getElementById('formula-grid').innerHTML=FORMULAS.map(f=>{
+    let calc='';
+    if(f.calc){
+      const inps=f.calc.inputs.map(i=>`<div><label class="calc-label">${i.l}</label><input class="calc-input" id="${f.calc.id}_${i.id}" value="${i.v}" type="number" step="any"></div>`).join('');
+      const args=f.calc.inputs.map(i=>`document.getElementById('${f.calc.id}_${i.id}').value`).join(',');
+      calc=`<div class="calc-section"><div class="calc-row">${inps}
+      <button class="calc-btn" onclick="runCalc('${f.calc.id}',[${args}],${f.calc.fn.replace(/'/g,'"')})">= Berechnen</button></div>
+      <div class="calc-result" id="cr_${f.calc.id}"></div></div>`;
     }
-    return `
-      <div class="formula-card">
-        <div class="fc-head">${f.icon} ${f.title} <span style="margin-left:auto;font-size:.65rem;opacity:.6">${f.lf}</span></div>
-        <div class="fc-body">
-          <div class="fc-formula">${f.formula}</div>
-          <div class="fc-desc">${f.desc}</div>
-          ${calcHtml}
-        </div>
-      </div>`;
+    return `<div class="formula-card"><div class="fc-head">${f.icon} ${f.title}<span style="margin-left:auto;font-size:.65rem;opacity:.6">${f.lf}</span></div>
+    <div class="fc-body"><div class="fc-formula">${f.formula}</div><div class="fc-desc">${f.desc}</div>${calc}</div></div>`;
   }).join('');
 }
-function runCalc(id, fn, args) {
-  try {
-    const result = fn(...args);
-    document.getElementById('cr_'+id).textContent = result.res;
-  } catch(e) {
-    document.getElementById('cr_'+id).textContent = 'Fehler: ' + e.message;
-  }
+function runCalc(id,args,fn){
+  try{document.getElementById('cr_'+id).textContent=fn(...args);}
+  catch(e){document.getElementById('cr_'+id).textContent='Fehler: '+e.message;}
 }
 
-// ═══════════════════════════════════════════════════════════════════
+// PLAN
+function renderPlan(){
+  document.getElementById('plan-grid').innerHTML=PLAN.map(w=>`
+  <div class="plan-week">
+    <div class="plan-week-hdr">${w.week}<span class="pb-badge">${w.pb}</span></div>
+    ${w.days.map(d=>`<div class="plan-day${d.exam?' exam-marker':''}">
+      <div class="plan-day-date">${d.date}</div>
+      <div class="plan-day-content">
+        <div class="plan-day-lf">${d.lf}</div>
+        <div class="plan-day-topics">${d.topics}</div>
+      </div></div>`).join('')}
+  </div>`).join('');
+}
+
 // PROGRESS
-// ═══════════════════════════════════════════════════════════════════
-function renderProgress() {
-  const lfs = ['LF1','LF2','LF3','LF4','LF5','LF6','LF7','LF8','LF9','LF10','LF11','LF12','LF13'];
-  const icons = ['📋','🌍','📐','🔭','🔢','🗺️','🏙️','🏗️','⚖️','📐','🏠','💰','📏'];
-  const grid = document.getElementById('prog-grid');
-  grid.innerHTML = lfs.map((lf,i) => {
-    const total = CARDS.filter(c=>c.lf===lf).length;
-    const known = CARDS.filter(c=>c.lf===lf && (cardRatings[c.lf+c.t]||0) >= 2).length;
-    const hard = CARDS.filter(c=>c.lf===lf && (cardRatings[c.lf+c.t]||0) === 1).length;
-    const pct = total ? Math.round(known/total*100) : 0;
-    const color = pct >= 80 ? '#22c55e' : pct >= 50 ? '#eab308' : '#3b82f6';
-    return `
-      <div class="prog-card">
-        <div class="pc-top"><span class="pc-icon">${icons[i]}</span><span class="pc-title">${lf}</span></div>
-        <div class="pc-bar"><div class="pc-bar-fill" style="width:${pct}%;background:${color}"></div></div>
-        <div class="pc-stats"><span>✓ ${known}/${total}</span><span>~ ${hard} schwer</span><span>${pct}%</span></div>
-      </div>`;
+function renderProgress(){
+  const lfs=['LF1','LF2','LF3','LF4','LF5','LF6','LF7','LF8','LF9','LF10','LF11','LF12','LF13'];
+  const icons=['📋','🌍','📐','🔭','🔢','🗺️','🏙️','🏗️','⚖️','📐','🏠','💰','📏'];
+  document.getElementById('prog-grid').innerHTML=lfs.map((lf,i)=>{
+    const tot=CARDS.filter(c=>c.lf===lf).length;
+    const kn=CARDS.filter(c=>c.lf===lf&&(cardRatings[c.lf+c.t]||0)>=2).length;
+    const hd=CARDS.filter(c=>c.lf===lf&&(cardRatings[c.lf+c.t]||0)===1).length;
+    const pct=tot?Math.round(kn/tot*100):0;
+    const col=pct>=80?'#22c55e':pct>=50?'#eab308':'#3b82f6';
+    return `<div class="prog-card"><div class="pc-top"><span>${icons[i]}</span><span style="font-size:.82rem;font-weight:700">${lf}</span></div>
+    <div class="pc-bar"><div class="pc-bar-fill" style="width:${pct}%;background:${col}"></div></div>
+    <div class="pc-stats"><span>✓ ${kn}/${tot}</span><span>~ ${hd} schwer</span><span>${pct}%</span></div></div>`;
   }).join('');
 }
-function resetProgress() {
-  if (confirm('Lernfortschritt wirklich zurücksetzen?')) {
-    cardRatings = {};
-    localStorage.removeItem('vmt-ratings');
-    localStorage.removeItem('vmt-qright');
-    localStorage.removeItem('vmt-streak');
-    renderProgress();
-    updateHomeStats();
+function resetProgress(){
+  if(confirm('Fortschritt wirklich zurücksetzen?')){
+    cardRatings={};localStorage.removeItem('vmt-r');localStorage.removeItem('vmt-qr');localStorage.removeItem('vmt-qt');
+    renderProgress();updateHome();
   }
 }
 
-// ═══════════════════════════════════════════════════════════════════
 // INIT
-// ═══════════════════════════════════════════════════════════════════
-updateHomeStats();
-initFlash();
+updateHome();initFlash();
 </script>
-</body>
-</html>
+</body></html>
